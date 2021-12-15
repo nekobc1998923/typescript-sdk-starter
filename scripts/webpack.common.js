@@ -34,4 +34,13 @@ module.exports = {
       color: '#fa8c16',
     }),
   ],
+  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        loader: 'babel-loader',
+        exclude: /node_modules/,
+      },
+    ],
+  },
 };
