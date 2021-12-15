@@ -12,7 +12,8 @@
     "lint": "eslint src",
     "typedoc": "rimraf docs && typedoc",
     "dev": "rimraf dist types && cross-env NODE_ENV=development webpack --config ./scripts/webpack.dev.js",
-    "build": "npm run lint && rimraf dist types && cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js"
+    "build": "npm run lint && rimraf dist types && cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js",
+    "prepare": "husky install"
   },
   "repository": {
     "type": "git",
@@ -51,6 +52,8 @@
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-import": "^2.25.3",
     "eslint-plugin-prettier": "^4.0.0",
+    "husky": "^7.0.4",
+    "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.2.6",
@@ -60,5 +63,10 @@
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
     "webpackbar": "^5.0.2"
+  },
+  "lint-staged": {
+    "*.{ts,js}": [
+      "eslint"
+    ]
   }
 }
