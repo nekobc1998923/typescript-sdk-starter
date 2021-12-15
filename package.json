@@ -8,9 +8,7 @@
     "dist",
     "types"
   ],
-  "scripts": {
-
-  },
+  "scripts": {},
   "repository": {
     "type": "git",
     "url": "git+https://github.com/nekobc1998923/typescript-sdk-starter.git"
@@ -34,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/nekobc1998923/typescript-sdk-starter/issues"
   },
-  "homepage": "https://github.com/nekobc1998923/typescript-sdk-starter#readme"
+  "homepage": "https://github.com/nekobc1998923/typescript-sdk-starter#readme",
+  "devDependencies": {
+    "typescript": "^4.5.4"
+  }
 }
