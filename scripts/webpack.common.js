@@ -1,4 +1,5 @@
 const { resolve, PROJECT_PATH } = require('./constants');
+const WebpackBar = require('webpackbar');
 
 module.exports = {
   // 定义了入口文件路径
@@ -27,4 +28,10 @@ module.exports = {
     },
     extensions: ['.ts', '.tsx', '.js'],
   },
+  plugins: [
+    new WebpackBar({
+      name: '正在卖力打包中~',
+      color: '#fa8c16',
+    }),
+  ],
 };
