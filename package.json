@@ -1,0 +1,38 @@
+{
+  "name": "typescript-sdk-starter",
+  "version": "0.0.1",
+  "private": false,
+  "description": "A TypeScript SDK template starter",
+  "main": "dist/typescript-sdk-starter.js",
+  "files": [
+    "dist",
+    "types"
+  ],
+  "scripts": {
+
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nekobc1998923/typescript-sdk-starter.git"
+  },
+  "keywords": [
+    "typescript",
+    "sdk",
+    "starter",
+    "webpack",
+    "editorconfig",
+    "prettier",
+    "eslint",
+    "husky",
+    "lint-staged",
+    "standard-version",
+    "typedoc",
+    "jest"
+  ],
+  "author": "菜猫子neko",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/nekobc1998923/typescript-sdk-starter/issues"
+  },
+  "homepage": "https://github.com/nekobc1998923/typescript-sdk-starter#readme"
+}
