@@ -13,7 +13,11 @@
     "typedoc": "rimraf docs && typedoc",
     "dev": "rimraf dist types && cross-env NODE_ENV=development webpack --config ./scripts/webpack.dev.js",
     "build": "npm run lint && rimraf dist types && cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "release": "standard-version",
+    "release-major": "standard-version --release-as major",
+    "release-minor": "standard-version --release-as minor",
+    "release-patch": "standard-version --release-as patch"
   },
   "repository": {
     "type": "git",
@@ -58,6 +62,7 @@
     "lint-staged": "^12.1.2",
     "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
+    "standard-version": "^9.3.2",
     "ts-loader": "^9.2.6",
     "typedoc": "^0.22.10",
     "typescript": "^4.5.4",
