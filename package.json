@@ -43,6 +43,7 @@
     "@babel/preset-env": "^7.16.5",
     "babel-loader": "^8.2.3",
     "cross-env": "^7.0.3",
+    "prettier": "^2.5.1",
     "rimraf": "^3.0.2",
     "ts-loader": "^9.2.6",
     "typedoc": "^0.22.10",
