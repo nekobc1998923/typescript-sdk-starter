@@ -13,7 +13,7 @@
     "test": "jest",
     "typedoc": "rimraf docs && typedoc",
     "dev": "rimraf dist types && cross-env NODE_ENV=development webpack-dev-server --config ./scripts/webpack.dev.js",
-    "build": "npm run lint && rimraf dist types && cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js",
+    "build": "npm run lint && npm run build && rimraf dist types && cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js",
     "prepare": "husky install",
     "release": "standard-version",
     "release-major": "standard-version --release-as major",
