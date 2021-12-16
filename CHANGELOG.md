@@ -1,4 +1,25 @@
 # Changelog
+### [0.0.3](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.2...v0.0.3) (2021-12-16)
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* 修复配置ESLint对Jest校验时的错误配置 ([64c01b4](https://github.com/nekobc1998923/typescript-sdk-starter/commit/64c01b4be4c0ed1ad02c5323cf1a567dea4a7a92))
+
+
+### ✅ Tests | 测试
+
+* jest 测试用例 ([c45c545](https://github.com/nekobc1998923/typescript-sdk-starter/commit/c45c5457f61f5596306c97106e6eb5937d303760))
+
+
+### ✨ Features | 新功能
+
+* 配置 本地热更新调试 ([eecf793](https://github.com/nekobc1998923/typescript-sdk-starter/commit/eecf793c945a368964d70ae4d7b252ce902d0eb5))
+* 配置 Jest 单元测试 ([825e57d](https://github.com/nekobc1998923/typescript-sdk-starter/commit/825e57d8f0ffbea19c5545b1e5349ca16e690f65))
+* 配置对Jest的ESLint代码检查 ([5977759](https://github.com/nekobc1998923/typescript-sdk-starter/commit/59777591845747f8e878337f83430c7fba7560d0))
+* 通过 Jest 来提交正确的代码 ([d9e821c](https://github.com/nekobc1998923/typescript-sdk-starter/commit/d9e821cdf8054d6a7aaecb91ed10a40b106bed56))
+* 修改README.md ([d9e90c1](https://github.com/nekobc1998923/typescript-sdk-starter/commit/d9e90c117d4ec26de50dc6b894f622f6e60c03ff))
+
 ### 0.0.2 (2021-12-15)
 
 
