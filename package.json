@@ -6,6 +6,7 @@
   "main": "dist/typescript-sdk-starter.js",
   "files": [
     "dist",
+    "src",
     "types"
   ],
   "scripts": {
