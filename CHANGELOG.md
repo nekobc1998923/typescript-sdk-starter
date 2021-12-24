@@ -1,4 +1,26 @@
 # Changelog
+### [0.0.4](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.3...v0.0.4) (2021-12-24)
+
+
+### ✨ Features | 新功能
+
+* 移除npmrc ([e281e5b](https://github.com/nekobc1998923/typescript-sdk-starter/commit/e281e5b839d5fd5e054c2b9c67b6e689439b3c11))
+
+
+### 🐛 Bug Fixes | Bug 修复
+
+* **package.json:** 修复错别字造成的问题 ([a6e9351](https://github.com/nekobc1998923/typescript-sdk-starter/commit/a6e9351dd165f78cd5139a4c6fda29f1a2c3c528))
+
+
+### 📦‍ Build System | 打包构建
+
+* 打包产物补充src文件夹 ([e447486](https://github.com/nekobc1998923/typescript-sdk-starter/commit/e447486b8d00de1819c899973bf2a4fd9f6b82a4))
+
+
+### 👷 Continuous Integration | CI 配置
+
+* 初步完善ci发布流程 ([32efd20](https://github.com/nekobc1998923/typescript-sdk-starter/commit/32efd207b493f6f92783c82f587de43420f912f0))
+
 ### [0.0.3](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.2...v0.0.3) (2021-12-16)
 
 
