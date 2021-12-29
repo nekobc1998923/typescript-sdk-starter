@@ -3,7 +3,7 @@
 package-lock.json
 
 # build产物
-/dist
+dist
 /types
 
 # eslint
@@ -11,3 +11,9 @@ package-lock.json
 
 # jest
 /coverage
+
+# cache缓存
+.cache
+
+# temp
+.temp
