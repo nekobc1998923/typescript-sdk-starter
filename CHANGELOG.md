@@ -1,4 +1,11 @@
 # Changelog
+### [1.0.2](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v1.0.0...v1.0.2) (2021-12-29)
+
+
+### ✏️ Documentation | 文档
+
+* 补充README.md ([1a6c77b](https://github.com/nekobc1998923/typescript-sdk-starter/commit/1a6c77b2b72bf8fd9bf5b4ddb6c11e15afd5202f))
+
 ## [1.0.0](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.4...v1.0.0) (2021-12-29)
 
 
