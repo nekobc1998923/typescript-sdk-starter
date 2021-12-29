@@ -1,6 +1,6 @@
 {
   "name": "typescript-sdk-starter",
-  "version": "0.0.4",
+  "version": "1.0.0",
   "private": false,
   "description": "A TypeScript SDK template starter",
   "main": "dist/typescript-sdk-starter.js",

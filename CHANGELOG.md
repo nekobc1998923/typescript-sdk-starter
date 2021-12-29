@@ -1,4 +1,29 @@
 # Changelog
+## [1.0.0](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.4...v1.0.0) (2021-12-29)
+
+
+### ♻️ Code Refactoring | 代码重构
+
+* 重构文档模块,移除typedoc ([abc2d14](https://github.com/nekobc1998923/typescript-sdk-starter/commit/abc2d141c8a294007d90f40da4277adb3ae76291))
+
+
+### ✏️ Documentation | 文档
+
+* 补充初始展示文档 ([1ab6223](https://github.com/nekobc1998923/typescript-sdk-starter/commit/1ab6223d0cc2c671d0d5bdd8a8dca3144ab8b97d))
+
+
+### ✨ Features | 新功能
+
+* 补充文档配置的base值 ([878b20b](https://github.com/nekobc1998923/typescript-sdk-starter/commit/878b20b44f78e4da2518eb1fc63d701d8f818f3e))
+* 完善vuepress文档配置 ([f0179d6](https://github.com/nekobc1998923/typescript-sdk-starter/commit/f0179d6ba2fbd8d4494bfe502887c14fe4b3ec3e))
+* gitignore 补充适配dist ([d8e09e9](https://github.com/nekobc1998923/typescript-sdk-starter/commit/d8e09e9541e6a6a4b2fcadaa99b695981ea51067))
+* vuepress安装 ([e51fc74](https://github.com/nekobc1998923/typescript-sdk-starter/commit/e51fc7425ee153a9f2c66d640228e3618048d802))
+
+
+### 👷 Continuous Integration | CI 配置
+
+* 补充vuepress打包的ci/cd流程 ([4aefe2b](https://github.com/nekobc1998923/typescript-sdk-starter/commit/4aefe2ba0c736f37fedc086549566b0ec34de874))
+
 ### [0.0.4](https://github.com/nekobc1998923/typescript-sdk-starter/compare/v0.0.3...v0.0.4) (2021-12-24)
 
 
