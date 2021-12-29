@@ -10,6 +10,8 @@
     "types"
   ],
   "scripts": {
+    "docs:dev": "vuepress dev docs",
+    "docs:build": "vuepress build docs",
     "lint": "eslint src test",
     "test": "jest",
     "dev": "rimraf dist types && cross-env NODE_ENV=development webpack-dev-server --config ./scripts/webpack.dev.js",
@@ -70,6 +72,7 @@
     "ts-jest": "^27.1.1",
     "ts-loader": "^9.2.6",
     "typescript": "^4.5.4",
+    "vuepress": "^2.0.0-beta.32",
     "webpack": "^5.65.0",
     "webpack-bundle-analyzer": "^4.5.0",
     "webpack-cli": "^4.9.1",
