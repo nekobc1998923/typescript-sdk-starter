@@ -3,7 +3,7 @@
 package-lock.json
 
 # build产物
-/dist
+dist
 /types
 
 # eslint
