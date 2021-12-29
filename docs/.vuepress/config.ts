@@ -7,6 +7,8 @@ export default defineUserConfig<DefaultThemeOptions>({
   title: packageJson.name,
   description: packageJson.description,
 
+  base:'/typescript-sdk-starter/',
+  
   // 主题和它的配置
   theme: '@vuepress/theme-default',
   themeConfig: {
