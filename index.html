@@ -1,64 +1,15 @@
-<!DOCTYPE html><html class="default"><head><meta charSet="utf-8"/><meta http-equiv="x-ua-compatible" content="IE=edge"/><title>typescript-sdk-starter</title><meta name="description" content="Documentation for typescript-sdk-starter"/><meta name="viewport" content="width=device-width, initial-scale=1"/><link rel="stylesheet" href="assets/style.css"/><link rel="stylesheet" href="assets/highlight.css"/><script async src="assets/search.js" id="search-script"></script></head><body><script>document.body.classList.add(localStorage.getItem("tsd-theme") || "os")</script><header><div class="tsd-page-toolbar"><div class="container"><div class="table-wrap"><div class="table-cell" id="tsd-search" data-base="."><div class="field"><label for="tsd-search-field" class="tsd-widget search no-caption">Search</label><input type="text" id="tsd-search-field"/></div><ul class="results"><li class="state loading">Preparing search index...</li><li class="state failure">The search index is not available</li></ul><a href="index.html" class="title">typescript-sdk-starter</a></div><div class="table-cell" id="tsd-widgets"><div id="tsd-filter"><a href="#" class="tsd-widget options no-caption" data-toggle="options">Options</a><div class="tsd-filter-group"><div class="tsd-select" id="tsd-filter-visibility"><span class="tsd-select-label">All</span><ul class="tsd-select-list"><li data-value="public">Public</li><li data-value="protected">Public/Protected</li><li data-value="private" class="selected">All</li></ul></div> <input type="checkbox" id="tsd-filter-inherited" checked/><label class="tsd-widget" for="tsd-filter-inherited">Inherited</label><input type="checkbox" id="tsd-filter-externals" checked/><label class="tsd-widget" for="tsd-filter-externals">Externals</label></div></div><a href="#" class="tsd-widget menu no-caption" data-toggle="menu">Menu</a></div></div></div></div><div class="tsd-page-title"><div class="container"><h1>typescript-sdk-starter</h1></div></div></header><div class="container container-main"><div class="row"><div class="col-8 col-content"><div class="tsd-panel tsd-typography">
-<a href="#typescript-sdk-starter" id="typescript-sdk-starter" style="color: inherit; text-decoration: none;">
-  <h1>typescript-sdk-starter</h1>
-</a>
-<blockquote>
-<p>一套无需额外配置的 TypeScript SDK 前端开发模板，能够帮助开发者快速搭建自己的规范工程环境</p>
-</blockquote>
-
-<a href="#从零开始的搭建教程" id="从零开始的搭建教程" style="color: inherit; text-decoration: none;">
-  <h2>从零开始的搭建教程</h2>
-</a>
-<p><a href="https://juejin.cn/post/7038967786051207175">掘金</a></p>
-
-<a href="#技术栈" id="技术栈" style="color: inherit; text-decoration: none;">
-  <h2>技术栈</h2>
-</a>
-<ul>
-<li>编程语言：<a href="https://www.typescriptlang.org/zh/">TypeScript 4.x</a> + <a href="https://www.javascript.com/">JavaScript</a></li>
-<li>构建工具：<a href="https://webpack.docschina.org/">Webpack</a></li>
-<li>代码规范：<a href="http://editorconfig.org/">EditorConfig</a> + <a href="https://prettier.io/">Prettier</a> + <a href="https://eslint.org/">ESLint</a> + <a href="https://github.com/airbnb/javascript#translation">Airbnb JavaScript Style Guide</a></li>
-<li>提交规范：<a href="https://commitlint.js.org/#/">Commitlint</a></li>
-<li>Git Hook 工具：<a href="https://typicode.github.io/husky/#/">husky</a> + <a href="https://github.com/okonet/lint-staged">lint-staged</a></li>
-<li>接口文档：<a href="https://link.juejin.cn/?target=https%3A%2F%2Ftypedoc.org%2F" title="https://typedoc.org/">TypeDoc</a></li>
-<li>单元测试：<a href="https://jestjs.io/">Jest</a> + <a href="https://kulshekhar.github.io/ts-jest/">ts-jest</a></li>
-</ul>
-
-<a href="#如何使用" id="如何使用" style="color: inherit; text-decoration: none;">
-  <h2>如何使用</h2>
-</a>
-
-<a href="#获取项目" id="获取项目" style="color: inherit; text-decoration: none;">
-  <h3>获取项目</h3>
-</a>
-<pre><code><span class="hl-0">git</span><span class="hl-1"> </span><span class="hl-0">clone</span><span class="hl-1"> </span><span class="hl-2">https</span><span class="hl-1">:</span><span class="hl-3">//github.com/nekobc1998923/typescript-sdk-starter.git</span>
-</code></pre>
-
-<a href="#安装依赖" id="安装依赖" style="color: inherit; text-decoration: none;">
-  <h3>安装依赖</h3>
-</a>
-<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">install</span>
-</code></pre>
-
-<a href="#修改-packagejson-和-webpackcommonjs-以适应自身需要" id="修改-packagejson-和-webpackcommonjs-以适应自身需要" style="color: inherit; text-decoration: none;">
-  <h3>修改 <code>package.json</code> 和 <code>webpack.common.js</code> 以适应自身需要</h3>
-</a>
-<p>需要修改的部分包括：<code>webpack.common.js</code> 里的 <code>output</code> 打包后的产物配置、<code>package.json</code> 里的 <code>name</code> 、 <code>repository</code> 等等</p>
-
-<a href="#本地调试" id="本地调试" style="color: inherit; text-decoration: none;">
-  <h3>本地调试</h3>
-</a>
-<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">dev</span>
-</code></pre>
-
-<a href="#代码打包" id="代码打包" style="color: inherit; text-decoration: none;">
-  <h3>代码打包</h3>
-</a>
-<pre><code><span class="hl-0">npm</span><span class="hl-1"> </span><span class="hl-0">run</span><span class="hl-1"> </span><span class="hl-0">build</span>
-</code></pre>
-
-<a href="#许可" id="许可" style="color: inherit; text-decoration: none;">
-  <h2>许可</h2>
-</a>
-<p>MIT Copyright © 2021 nekobc1998923</p>
-</div></div><div class="col-4 col-menu menu-sticky-wrap menu-highlight"><nav class="tsd-navigation primary"><ul><li class="current"><a href="modules.html">Exports</a></li></ul></nav><nav class="tsd-navigation secondary menu-sticky"><ul><li class="tsd-kind-class"><a href="classes/default.html" class="tsd-kind-icon">default</a></li></ul></nav></div></div></div><footer class="with-border-bottom"><div class="container"><h2>Legend</h2><div class="tsd-legend-group"><ul class="tsd-legend"><li class="tsd-kind-constructor tsd-parent-kind-class"><span class="tsd-kind-icon">Constructor</span></li><li class="tsd-kind-property tsd-parent-kind-class"><span class="tsd-kind-icon">Property</span></li><li class="tsd-kind-method tsd-parent-kind-class"><span class="tsd-kind-icon">Method</span></li></ul></div><h2>Settings</h2><p>Theme <select id="theme"><option value="os">OS</option><option value="light">Light</option><option value="dark">Dark</option></select></p></div></footer><div class="container tsd-generator"><p>Generated using <a href="https://typedoc.org/" target="_blank">TypeDoc</a></p></div><div class="overlay"></div><script src="assets/main.js"></script></body></html>
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.32">
+    <title>typescript-sdk-starter</title><meta name="description" content="A TypeScript SDK template starter">
+    <link rel="modulepreload" href="/typescript-sdk-starter/assets/app.b4017085.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/index.html.504c7800.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/plugin-vue_export-helper.21dcd24c.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/index.html.d22bf4d7.js">
+    <link rel="stylesheet" href="/typescript-sdk-starter/assets/style.f2aa6f9d.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container no-sidebar"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a aria-current="page" href="/typescript-sdk-starter/" class="router-link-active router-link-exact-active"><!----><span class="site-name">typescript-sdk-starter</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a aria-current="page" href="/typescript-sdk-starter/" class="router-link-active router-link-exact-active" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/api/" class="" aria-label="API"><!--[--><!--]--> API <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/nekobc1998923/typescript-sdk-starter" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a aria-current="page" href="/typescript-sdk-starter/" class="router-link-active router-link-exact-active" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/guide/" class="" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/api/" class="" aria-label="API"><!--[--><!--]--> API <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/nekobc1998923/typescript-sdk-starter" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><!----><!--[--><!--]--></aside><!--]--><!--[--><main class="home"><header class="hero"><!----><h1 id="main-title">typescript-sdk-starter</h1><p class="description">从零开始搭建规范的 TypeScript SDK 项目</p><p class="actions"><!--[--><a href="/typescript-sdk-starter/guide/" class="action-button primary" aria-label="开始学习 Go"><!--[--><!--]--> 开始学习 Go <!--[--><!--]--></a><a class="external-link action-button secondary" href="https://github.com/nekobc1998923/typescript-sdk-starter" rel="noopener noreferrer" target="_blank" aria-label="Github地址"><!--[--><!--]--> Github地址 <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a><!--]--></p></header><div class="features"><!--[--><div class="feature"><h2>Webpack构建</h2><p>使用Webpack 做打包构建</p></div><div class="feature"><h2>代码风格规范</h2><p>ESLint、Prettier、EditorConifg 做代码规范约束</p></div><div class="feature"><h2>提交规范</h2><p>husky、Commitlint、lint-staged 做提交规范约束</p></div><div class="feature"><h2>单元测试</h2><p>Jest 做单元测试</p></div><div class="feature"><h2>CI/CD</h2><p>Github Actions 做自动化部署发布</p></div><!--]--></div><div class="theme-default-content custom"></div><!--[--><div class="footer">MIT Licensed | Copyright © 2021 菜猫子neko</div><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/typescript-sdk-starter/assets/app.b4017085.js" defer></script>
+  </body>
+</html>

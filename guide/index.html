@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="generator" content="VuePress 2.0.0-beta.32">
+    <title>typescript-sdk-starter</title><meta name="description" content="A TypeScript SDK template starter">
+    <link rel="modulepreload" href="/typescript-sdk-starter/assets/app.b4017085.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/index.html.a91a3317.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/plugin-vue_export-helper.21dcd24c.js"><link rel="modulepreload" href="/typescript-sdk-starter/assets/index.html.02a0441a.js">
+    <link rel="stylesheet" href="/typescript-sdk-starter/assets/style.f2aa6f9d.css">
+  </head>
+  <body>
+    <div id="app"><!--[--><div class="theme-container"><!--[--><header ref_key="navbar" class="navbar"><div class="toggle-sidebar-button" title="toggle sidebar" aria-expanded="false" role="button" tabindex="0"><div class="icon" aria-hidden="true"><span></span><span></span><span></span></div></div><span><a href="/typescript-sdk-starter/" class=""><!----><span class="site-name">typescript-sdk-starter</span></a></span><div class="navbar-items-wrapper" style=""><!--[--><!--]--><nav class="navbar-items can-hide"><!--[--><div class="navbar-item"><a href="/typescript-sdk-starter/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a aria-current="page" href="/typescript-sdk-starter/guide/" class="router-link-active router-link-exact-active router-link-active" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/api/" class="" aria-label="API"><!--[--><!--]--> API <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/nekobc1998923/typescript-sdk-starter" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><button class="toggle-dark-button" title="toggle dark mode"><svg style="" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6z" fill="currentColor"></path><path d="M5.394 6.813l1.414-1.415l3.506 3.506L8.9 10.318z" fill="currentColor"></path><path d="M2 15.005h5v2H2z" fill="currentColor"></path><path d="M5.394 25.197L8.9 21.691l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 25.005h2v5h-2z" fill="currentColor"></path><path d="M21.687 23.106l1.414-1.415l3.506 3.506l-1.414 1.414z" fill="currentColor"></path><path d="M25 15.005h5v2h-5z" fill="currentColor"></path><path d="M21.687 8.904l3.506-3.506l1.414 1.415l-3.506 3.505z" fill="currentColor"></path><path d="M15 2.005h2v5h-2z" fill="currentColor"></path></svg><svg style="display:none;" class="icon" focusable="false" viewBox="0 0 32 32"><path d="M13.502 5.414a15.075 15.075 0 0 0 11.594 18.194a11.113 11.113 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1.002 1.002 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.072 13.072 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3z" fill="currentColor"></path></svg></button><!----></div></header><!--]--><div class="sidebar-mask"></div><!--[--><aside class="sidebar"><nav class="navbar-items"><!--[--><div class="navbar-item"><a href="/typescript-sdk-starter/" class="" aria-label="首页"><!--[--><!--]--> 首页 <!--[--><!--]--></a></div><div class="navbar-item"><a aria-current="page" href="/typescript-sdk-starter/guide/" class="router-link-active router-link-exact-active router-link-active" aria-label="指南"><!--[--><!--]--> 指南 <!--[--><!--]--></a></div><div class="navbar-item"><a href="/typescript-sdk-starter/api/" class="" aria-label="API"><!--[--><!--]--> API <!--[--><!--]--></a></div><div class="navbar-item"><a class="external-link" href="https://github.com/nekobc1998923/typescript-sdk-starter" rel="noopener noreferrer" target="_blank" aria-label="GitHub"><!--[--><!--]--> GitHub <span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span><!--[--><!--]--></a></div><!--]--></nav><!--[--><!--]--><ul class="sidebar-items"><!--[--><li><p class="sidebar-item sidebar-heading"> <!----></p><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#前言" class="router-link-active router-link-exact-active sidebar-item" aria-label="前言"><!--[--><!--]--> 前言 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#github" class="router-link-active router-link-exact-active sidebar-item" aria-label="GitHub"><!--[--><!--]--> GitHub <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#项目初始化" class="router-link-active router-link-exact-active sidebar-item" aria-label="项目初始化"><!--[--><!--]--> 项目初始化 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#初始化package-json" class="router-link-active router-link-exact-active sidebar-item" aria-label="初始化package.json"><!--[--><!--]--> 初始化package.json <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#配置-gitignore" class="router-link-active router-link-exact-active sidebar-item" aria-label="配置.gitignore"><!--[--><!--]--> 配置.gitignore <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#安装typescript" class="router-link-active router-link-exact-active sidebar-item" aria-label="安装typescript"><!--[--><!--]--> 安装typescript <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#webpack" class="router-link-active router-link-exact-active sidebar-item" aria-label="Webpack"><!--[--><!--]--> Webpack <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#webpack安装" class="router-link-active router-link-exact-active sidebar-item" aria-label="webpack安装"><!--[--><!--]--> webpack安装 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#cross-env-webpack-merge" class="router-link-active router-link-exact-active sidebar-item" aria-label="cross-env + webpack-merge"><!--[--><!--]--> cross-env + webpack-merge <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#webpackbar" class="router-link-active router-link-exact-active sidebar-item" aria-label="webpackbar"><!--[--><!--]--> webpackbar <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#rimraf" class="router-link-active router-link-exact-active sidebar-item" aria-label="rimraf"><!--[--><!--]--> rimraf <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#devtool" class="router-link-active router-link-exact-active sidebar-item" aria-label="devtool"><!--[--><!--]--> devtool <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#babel" class="router-link-active router-link-exact-active sidebar-item" aria-label="babel"><!--[--><!--]--> babel <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#browserslistrc" class="router-link-active router-link-exact-active sidebar-item" aria-label="browserslistrc"><!--[--><!--]--> browserslistrc <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#ts-loader" class="router-link-active router-link-exact-active sidebar-item" aria-label="ts-loader"><!--[--><!--]--> ts-loader <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#tree-shaking" class="router-link-active router-link-exact-active sidebar-item" aria-label="Tree-shaking"><!--[--><!--]--> Tree-shaking <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#webpack-bundle-analyzer" class="router-link-active router-link-exact-active sidebar-item" aria-label="webpack-bundle-analyzer"><!--[--><!--]--> webpack-bundle-analyzer <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#其它可能会需要的配置" class="router-link-active router-link-exact-active sidebar-item" aria-label="其它可能会需要的配置"><!--[--><!--]--> 其它可能会需要的配置 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#terser-webpack-plugin" class="router-link-active router-link-exact-active sidebar-item" aria-label="terser-webpack-plugin"><!--[--><!--]--> terser-webpack-plugin <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#api文档和注释" class="router-link-active router-link-exact-active sidebar-item" aria-label="Api文档和注释"><!--[--><!--]--> Api文档和注释 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#typedoc" class="router-link-active router-link-exact-active sidebar-item" aria-label="typedoc"><!--[--><!--]--> typedoc <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#korofileheader" class="router-link-active router-link-exact-active sidebar-item" aria-label="koroFileHeader"><!--[--><!--]--> koroFileHeader <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#vuepress-更自由的定制文档" class="router-link-active router-link-exact-active sidebar-item" aria-label="Vuepress 更自由的定制文档"><!--[--><!--]--> Vuepress 更自由的定制文档 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#移除-typedoc-相关的配置" class="router-link-active router-link-exact-active sidebar-item" aria-label="移除 typedoc 相关的配置"><!--[--><!--]--> 移除 typedoc 相关的配置 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#安装" class="router-link-active router-link-exact-active sidebar-item" aria-label="安装"><!--[--><!--]--> 安装 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#代码规范和提交规范" class="router-link-active router-link-exact-active sidebar-item" aria-label="代码规范和提交规范"><!--[--><!--]--> 代码规范和提交规范 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#prettier" class="router-link-active router-link-exact-active sidebar-item" aria-label="Prettier"><!--[--><!--]--> Prettier <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#eslint" class="router-link-active router-link-exact-active sidebar-item" aria-label="ESLint"><!--[--><!--]--> ESLint <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#vscode插件-editorconfig" class="router-link-active router-link-exact-active sidebar-item" aria-label="vscode插件 EditorConfig"><!--[--><!--]--> vscode插件 EditorConfig <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#vscode插件-prettier-code-formatter" class="router-link-active router-link-exact-active sidebar-item" aria-label="vscode插件 Prettier-Code formatter"><!--[--><!--]--> vscode插件 Prettier-Code formatter <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#vscode插件-eslint" class="router-link-active router-link-exact-active sidebar-item" aria-label="vscode插件 ESLint"><!--[--><!--]--> vscode插件 ESLint <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#husky-lint-staged-提交规范的代码" class="router-link-active router-link-exact-active sidebar-item" aria-label="husky + lint-staged 提交规范的代码"><!--[--><!--]--> husky + lint-staged 提交规范的代码 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#commitlint-提交规范的-commit" class="router-link-active router-link-exact-active sidebar-item" aria-label="commitlint 提交规范的 commit"><!--[--><!--]--> commitlint 提交规范的 commit <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#standard-version-生成-changelog" class="router-link-active router-link-exact-active sidebar-item" aria-label="standard-version 生成 changelog"><!--[--><!--]--> standard-version 生成 changelog <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#配置外的一些话" class="router-link-active router-link-exact-active sidebar-item" aria-label="配置外的一些话"><!--[--><!--]--> 配置外的一些话 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#本地热更新调试代码" class="router-link-active router-link-exact-active sidebar-item" aria-label="本地热更新调试代码"><!--[--><!--]--> 本地热更新调试代码 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#html-webpack-plugin" class="router-link-active router-link-exact-active sidebar-item" aria-label="html-webpack-plugin"><!--[--><!--]--> html-webpack-plugin <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#webpack-dev-server" class="router-link-active router-link-exact-active sidebar-item" aria-label="webpack-dev-server"><!--[--><!--]--> webpack-dev-server <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#npm-link" class="router-link-active router-link-exact-active sidebar-item" aria-label="npm link"><!--[--><!--]--> npm link <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#单元测试" class="router-link-active router-link-exact-active sidebar-item" aria-label="单元测试"><!--[--><!--]--> 单元测试 <!--[--><!--]--></a><!--[--><ul style="" class="sidebar-item-children"><!--[--><li><a aria-current="page" href="/typescript-sdk-starter/guide/#jest" class="router-link-active router-link-exact-active sidebar-item" aria-label="Jest"><!--[--><!--]--> Jest <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#jest-通过-eslint-校验" class="router-link-active router-link-exact-active sidebar-item" aria-label="Jest 通过 ESLint 校验"><!--[--><!--]--> Jest 通过 ESLint 校验 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#通过-jest-来提交正确的代码" class="router-link-active router-link-exact-active sidebar-item" aria-label="通过 Jest 来提交正确的代码"><!--[--><!--]--> 通过 Jest 来提交正确的代码 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#自动部署发布" class="router-link-active router-link-exact-active sidebar-item" aria-label="自动部署发布"><!--[--><!--]--> 自动部署发布 <!--[--><!--]--></a><!----></li><li><a aria-current="page" href="/typescript-sdk-starter/guide/#结尾" class="router-link-active router-link-exact-active sidebar-item" aria-label="结尾"><!--[--><!--]--> 结尾 <!--[--><!--]--></a><!----></li><!--]--></ul><!--]--></li><!--]--></ul><!--[--><!--]--></aside><!--]--><!--[--><main class="page"><!--[--><!--]--><div class="theme-default-content"><!--[--><h2 id="前言" tabindex="-1"><a class="header-anchor" href="#前言" aria-hidden="true">#</a> 前言</h2><p>本文主要介绍从零开始配置 TypeScript SDK 项目整体的环境配置，包括了以下几方面的配置</p><ul><li>使用 <strong>Webpack</strong> 进行 <code>工程搭建</code></li><li>使用 <strong>EditorConifg、Prettier、ESLint、Airbnb JavaScript Style Guide</strong> 来保证 <code>团队代码风格规范</code></li><li>使用 <strong>husky、Commitlint</strong> 和 <strong>lint-staged</strong> 来 <code>构建前端工作流</code></li><li>使用 <strong>standard-version</strong> 生成 <code>changelog</code></li><li>使用 <strong>TypeDoc</strong> 快速生成 <code>API文档</code>。</li><li>使用 <strong>html-webpack-plugin、webpack-dev-server</strong> 进行 <code>本地热更新代码调试</code></li><li>使用 <strong>Jest</strong> 进行 <code>单元测试</code>，并约束提交 <code>正确的代码</code></li><li>使用 <strong>Github Actions</strong> 进行 <code>自动部署发布</code></li></ul><blockquote><p><strong>温馨提醒</strong>：如果你是想制作一个基于 TypeScript 的简单工具函数库，那么你也使用一些成熟的 &quot;零配置&quot; 脚手架；如果你是需要写一个比较复杂的中间件：监控SDK、中间层SDK等，那么这篇文章可以帮助你进行一个美好的开始。</p></blockquote><p>如果本文对你能够有所帮助，点一个赞就是对我的鼓励，对文内的配置有什么问题也欢迎在评论区留言</p><h2 id="github" tabindex="-1"><a class="header-anchor" href="#github" aria-hidden="true">#</a> GitHub</h2><p>相关代码已经上传至 <a href="https://github.com/nekobc1998923/typescript-sdk-starter" target="_blank" rel="noopener noreferrer">GitHub仓库<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> ，<strong>有兴趣的小伙伴可以 star 一下</strong></p><h2 id="项目初始化" tabindex="-1"><a class="header-anchor" href="#项目初始化" aria-hidden="true">#</a> 项目初始化</h2><h3 id="初始化package-json" tabindex="-1"><a class="header-anchor" href="#初始化package-json" aria-hidden="true">#</a> 初始化package.json</h3><p><strong>我们先把 Github 上自己的一个仓库 clone 到自己本地</strong>，然后在项目根目录我们直接跑初始化命令即可,里面配置需要的小伙伴初始化完后自行去 <code>package.json</code> 中配置</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm init -y
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><h3 id="配置-gitignore" tabindex="-1"><a class="header-anchor" href="#配置-gitignore" aria-hidden="true">#</a> 配置.gitignore</h3><p><code>.gitignore</code> 里配置的是我们提交到git时需要忽略的一文件或者文件夹，比如<code>node_modules、dist</code>等</p><p>我们在根目录下新建 并新增以下配置：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># npm包
+/node_modules
+package-lock.json
+
+# build产物
+/dist
+/types
+
+# eslint
+.eslintcache
+
+# jest
+/coverage
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><h3 id="安装typescript" tabindex="-1"><a class="header-anchor" href="#安装typescript" aria-hidden="true">#</a> 安装typescript</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install typescript -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>在根目录下新建 <code>tsconfig.json</code> ，这里贴上我的一个配置，需要自定义的小伙伴可以查看 <a href="https://www.tslang.cn/docs/handbook/tsconfig-json.html" target="_blank" rel="noopener noreferrer"><em>TypeScript</em>中文网<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> 上的完整配置项</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;compilerOptions&quot;: {
+    // 指定 ECMAScript 目标版本 &quot;ES3&quot;（默认）， &quot;ES5&quot;， &quot;ES6&quot; / &quot;ES2015&quot;， &quot;ES2016&quot;， &quot;ES2017&quot; 或 &quot;ESNext&quot;。
+    &quot;target&quot;: &quot;ES5&quot;,
+    // 构建的目标代码删除所有注释，但是不会删除以 /!* 开头的版权信息
+    &quot;removeComments&quot;: true,
+    // 启用所有严格类型检查选项。启用 --strict 相当于启用 --noImplicitAny, --noImplicitThis, --alwaysStrict， --strictNullChecks, --strictFunctionTypes 和 --strictPropertyInitialization
+    &quot;strict&quot;: true,
+    // 禁止对同一个文件的不一致的引用
+    &quot;forceConsistentCasingInFileNames&quot;: true,
+    // 生成相应的 .d.ts文件
+    &quot;declaration&quot;: true,
+    // 生成的 .d.ts文件路径，这里统一生成到types文件夹下
+    &quot;declarationDir&quot;: &quot;types&quot;,
+    // 报错时不生成输出文件
+    &quot;noEmitOnError&quot;: true,
+    // baseUrl来告诉编译器到哪里去查找模块，所有非相对模块导入都会被当做相对于 baseUrl。
+    &quot;baseUrl&quot;: &quot;.&quot;,
+    // 非相对模块导入的路径映射配置
+    &quot;paths&quot;: {
+      &quot;@/*&quot;: [&quot;src/*&quot;],
+      &quot;@docs/*&quot;:[&quot;docs/*&quot;],
+      &quot;@public/*&quot;:[&quot;public/*&quot;],
+      &quot;@test/*&quot;:[&quot;test/*&quot;],
+    }
+  },
+  // 编译器默认包含的编译文件，src是源代码文件夹，test是jest测试代码文件夹
+  &quot;include&quot;: [&quot;src/**/*&quot;,&quot;test/**/*&quot;],
+  // 编译器默认排除的编译文件
+  &quot;exclude&quot;: [&quot;node_modules&quot;]
+}
+
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br><span class="line-number">31</span><br><span class="line-number">32</span><br></div></div><blockquote><p>这里 <code>path</code> 配置了非相对模块导入的路径映射配置，跟下面将要提到的 <code>Webpack</code> 别名配置都得一起配置使用</p></blockquote><h2 id="webpack" tabindex="-1"><a class="header-anchor" href="#webpack" aria-hidden="true">#</a> Webpack</h2><p>开门见山的说，这里选择了 <code>Webpack</code> 作为打包工具的原因很简单：<code>Webpack</code> 毋庸置疑是功能最为强大完整的；不过如果考虑配置简单之类的因素，也可以自行选择其余的打包工具比如 <code>rollup</code> <code>gulp</code> 等</p><p>这一节里面，我们讲介绍以下三块配置流程：</p><ul><li>如何使用 <strong>cross-env + webpack-merge</strong> 组合来实现 <code>开发环境和生产环境的不同配置</code>。</li><li>如何使用 <strong>Babel</strong> 进行 <code>代码的向后兼容</code>。</li><li>如何使用 <strong>某些插件</strong> 实现 <code>一些奇奇怪怪的功能 </code></li></ul><h3 id="webpack安装" tabindex="-1"><a class="header-anchor" href="#webpack安装" aria-hidden="true">#</a> webpack安装</h3><p>想用webpack，就需要安装两个包</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install webpack webpack-cli -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>安装完之后，我们在根目录下新建 <code>scripts</code> 文件夹，<code>scripts</code> 文件夹内新增 <code>constants.js</code> 、 <code>webpack.common.js</code> 两个文件</p><p>我们再在根目录下新建 <code>src</code> 文件夹，用来放我们的源码，并在 <code>src</code> 下新建 <code>index.ts</code> 入口文件</p><p>我们再在根目录下新建 <code>public</code> 文件夹，用来放我们的静态资源文件</p><p>在根目录新增的文件夹和文件结构如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>├── scripts
+│   ├── webpack.common.js
+│   └── constants.js
+├── src
+│   └── index.ts
+├── public
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>constants.js</code>文件如下：</p><p>这里的 PROJECT_PATH 常量，可以让我们不用写不断../../，而从根目录开始找所需文件</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/f7ee8581d3304940a499c783df763464~tplv-k3u1fbpfcp-watermark.image?" alt="ac7ac05239f346719d442270d51f5fb8.png"></p><p><code>webpack.common.js</code>如下：</p><blockquote><p>这里我们配置 <code>libraryTarget</code> 为 <code>umd</code> ，因为作为 SDK ，我们希望能够支持多种方式的引用：<code>import</code>、<code>require</code>、<code>script</code></p></blockquote><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const { resolve, PROJECT_PATH} = require(&#39;./constants&#39;)
+
+module.exports = {
+  // 定义了入口文件路径
+  entry: {
+    index: resolve(PROJECT_PATH, &#39;./src/index.ts&#39;),
+  },
+  // 定义了编译打包之后的文件名以及所在路径。还有打包的模块类型
+  output: {
+    // 打包后的产物名
+    filename: &#39;library-starter.js&#39;,
+    // 在全局变量中增加一个libraryStarter变量
+    library: &#39;libraryStarter&#39;,
+    // 打包成umd模块
+    libraryTarget: &#39;umd&#39;,
+    // libraryExport这个属性需要设置，否则导出后，外层会包有一层default
+    libraryExport: &#39;default&#39;,
+    // 路径
+    path: resolve(PROJECT_PATH, &#39;./dist&#39;),
+  },
+  resolve: {
+    alias: {
+      &#39;@&#39;: resolve(__dirname, &#39;../src&#39;),
+      &#39;@docs&#39;: resolve(__dirname, &#39;../docs&#39;),
+      &#39;@public&#39;: resolve(__dirname, &#39;../public&#39;),
+      &#39;@test&#39;: resolve(__dirname, &#39;../test&#39;),
+    },
+    extensions: [&#39;.ts&#39;, &#39;.tsx&#39;, &#39;.js&#39;],
+  },
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br><span class="line-number">30</span><br></div></div><blockquote><p>这里设置了一个 <code>alias 别名</code> ，需要注意一点，<code>Webpack</code> 结合 TypeScript 搭建项目时，使用别名需要在 <code>tsconfig.json</code> 和 <code>webpack.common.js</code> 里都配置， 配置 <code>webpack.common.js</code> 是<strong>为了 build 打包时能够识别路径</strong>，配置 <code>tsconfig.json</code> 是<strong>为了让我们在本地开发调试时 <code>ESLint</code> 不会报错</strong></p></blockquote><p>配置别名后，我们就可以使用别名进行文件引入</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// 使用 src 别名 @ 
+import &#39;@/index&#39;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><h3 id="cross-env-webpack-merge" tabindex="-1"><a class="header-anchor" href="#cross-env-webpack-merge" aria-hidden="true">#</a> cross-env + webpack-merge</h3><blockquote><p>在 webpack 中针对开发环境与生产环境我们要分别配置，以适应不同的环境需求，不同环境的需求不同，我们在开发环境下需要的是 <code>更快的构建速度</code> 和 <code>source-map的错误信息</code> ；而我们在生产环境下需要的是 <code>更小的打包体积</code> ；</p></blockquote><p>我们要配置我们的scripts文件夹，用来编写公共的webpack配置以及不同环境下的配置。</p><p>我们安装 <code>cross-env</code> 可<strong>跨平台设置和使用环境变量</strong>，不同操作系统设置环境变量的方式不一定相同，比如 Mac 电脑上使用 <code>export NODE_ENV=development </code>，而 Windows 电脑上使用的是 <code>set NODE_ENV=development</code> ，有了这个利器，我们无需在考虑操作系统带来的差异性。</p><p>我们先安装 <code>cross-env</code> ：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install cross-env -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们在 <code>scripts</code> 文件夹内新建 <code>webpack.dev.js</code> 和 <code>webpack.prod.js</code> 两个文件：</p><p><code>webpack.dev</code> 配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const { merge } = require(&#39;webpack-merge&#39;)
+const common = require(&#39;./webpack.common.js&#39;)
+
+module.exports = merge(common, {
+  mode: &#39;development&#39;,
+})
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>webpack.prod</code> 配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const { merge } = require(&#39;webpack-merge&#39;)
+const common = require(&#39;./webpack.common.js&#39;)
+
+module.exports = merge(common, {
+  mode: &#39;production&#39;,
+})
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p><code>package.json</code> 里配置如下：考虑本地调试，这里分为开发环境下的 <code>dev</code> 和生产环境的 <code>build</code></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;cross-env NODE_ENV=development webpack --config ./scripts/webpack.dev.js&quot;,
+    &quot;build&quot;: &quot;cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js&quot;
+  },
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="webpackbar" tabindex="-1"><a class="header-anchor" href="#webpackbar" aria-hidden="true">#</a> webpackbar</h3><p>是否经常在某些项目构建的时候，能够看到有打包的进度？</p><p>现在我们也可以做到这一点了，我们可以借助 webpackbar 来完成此项任务，安装它：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install webpackbar -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>在 webpack.common.js 增加以下plugins的代码：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const WebpackBar = require(&#39;webpackbar&#39;);
+
+module.exports = {
+  // 其他配置...
+  plugins: [
+    // 其他plugins...
+    new WebpackBar({
+      name: &#39;正在卖力打包中~&#39;,
+      color: &#39;#fa8c16&#39;,
+    }),
+  ],
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br></div></div><p>我们再来看一下实际打包中的效果，这样看起来是不是舒服多了呢？在项目比较大的时候，有时有个反馈还是很舒服的。</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/0591f74cb9314ac6bcff9cd812512bcc~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><h3 id="rimraf" tabindex="-1"><a class="header-anchor" href="#rimraf" aria-hidden="true">#</a> rimraf</h3><p>清除构建产物这里建议使用 <code>rimraf</code> ，我们先安装它：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install rimraf -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后配置 <code>package.json</code> 里的 <code>scripts</code> ，我们在原本的build之前加上 <code>rimraf dist types</code> ：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+
+  &quot;scripts&quot;: {
+     &quot;dev&quot;: &quot;rimraf dist types &amp;&amp; cross-env NODE_ENV=development webpack --config ./scripts/config/webpack.dev.js&quot;,
+     &quot;build&quot;: &quot;rimraf dist types &amp;&amp; cross-env NODE_ENV=production webpack --config ./scripts/config/webpack.prod.js&quot;,
+  },
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样就可以在每次build之前，就自动把dist文件夹删掉，重新生成新的</p><h3 id="devtool" tabindex="-1"><a class="header-anchor" href="#devtool" aria-hidden="true">#</a> devtool</h3><p>devtool 中的一些设置，可以帮助我们将编译后的代码映射回原始源代码，即大家经常听到的 source-map ，这对于本地调试代码错误的时候特别重要，而不同的设置会明显影响到构建和重新构建的速度。</p><p>在开发环境中，我这边选择了 <code>eval-source-map</code></p><p>在生产环境我们不设置，webpack中当mode为production时自动就不会去生成source-map，我们不能把代码映射放到生产环境</p><p>所以我们在 <code>webpack.dev.js</code> 文件里加上 <code>devtool</code> 配置</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = merge(common, {
+    devtool: &#39;eval-source-map&#39;,
+})
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><h3 id="babel" tabindex="-1"><a class="header-anchor" href="#babel" aria-hidden="true">#</a> babel</h3><blockquote><p>Babel 是一个工具链，主要用于将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中。</p></blockquote><p>我们先安装一些babel的插件</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install @babel/core @babel/preset-env @babel/plugin-transform-runtime babel-loader -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><ul><li><strong>@babel/core</strong>：@babel/core是babel的核心库，所有的核心Api都在这个库里，这些Api供babel-loader调用</li><li><strong>@babel/preset-env</strong>：这是一个预设的插件集合，包含了一组相关的插件，Bable中是通过各种插件来指导如何进行代码转换。该插件包含所有es6转化为es5的翻译规则</li><li><strong>@babel/plugin-transform-runtime</strong>：transform-runtime的转换是非侵入性的，也就是它不会污染你的原有的方法。遇到需要转换的方法它会另起一个名字，否则会直接影响使用库的业务代码，</li><li><strong>babel-loader</strong>：它作为一个中间桥梁，通过调用babel/core中的api来告诉webpack要如何处理js。</li></ul><p>安装好后，我们在根目录下新建<code>.babelrc</code>文件，配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;,
+      {
+        // 防止babel将任何模块类型都转译成CommonJS类型，导致tree-shaking失效问题
+        &quot;modules&quot;: false
+      }
+    ]
+  ],
+  &quot;plugins&quot;: [
+    [
+      &quot;@babel/plugin-transform-runtime&quot;,
+      {
+        &quot;corejs&quot;: {
+          &quot;version&quot;: 3,
+          &quot;proposals&quot;: true
+        },
+        &quot;useESModules&quot;: true
+      }
+    ]
+  ]
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>然后我们在<code>webpack.common.js</code>中配置 <code>module</code>：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  module: {
+    rules: [
+      {
+        test: /\.(js)$/,
+        loader: &#39;babel-loader&#39;,
+        exclude: /node_modules/,
+      },
+    ],
+  },
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><blockquote><p><strong>@babel/polyfill 和 @babel/plugin-transform-runtime的选择</strong></p></blockquote><p>polyfill的垫片是在全局变量上挂载目标浏览器缺失的功能，因此在开发类库，第三方模块或者组件库时，就不能再使用babel-polyfill了，否则可能会造成全局污染，此时应该使用<a href="https://www.zhihu.com/search?q=transform-runtime&amp;search_source=Entity&amp;hybrid_search_source=Entity&amp;hybrid_search_extra=%7B%22sourceType%22:%22article%22,%22sourceId%22:138108118%7D" target="_blank" rel="noopener noreferrer">transform-runtime<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a>。transform-runtime的转换是非侵入性的，也就是它不会污染你的原有的方法。遇到需要转换的方法它会另起一个名字，否则会直接影响使用库的业务代码，</p><p>故开发类库，第三方模块或者组件库时使用<code>transform-runtime</code>，平常的项目使用<code>babel-polyfill</code>即可</p><h3 id="browserslistrc" tabindex="-1"><a class="header-anchor" href="#browserslistrc" aria-hidden="true">#</a> browserslistrc</h3><p>这里提一个非常有意思的配置，也就是browserslistrc</p><p>我们考虑浏览器兼容性，当然这里讲的兼容性问题<strong>不是指屏幕大小的变化适配</strong>，而实<strong>针对不同的浏览器（不同的版本）支持的特性</strong>：比如 <code>css</code> 特性、<code>js</code> 语法之间的兼容性</p><p>我们在项目根目录新建 <code>.browserslistrc</code> 文件，配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>&gt; 5%
+last 2 versions
+not ie &lt; 11
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>上面这里的意思是，全球超过 5%⼈使⽤的浏览器的最后两个版本都需要兼容，唯独排除 ie11 以下版本不兼容。有了这个之后，我们就可以根据自身的需要进行浏览器兼容，而不是通通全部都转</p><h3 id="ts-loader" tabindex="-1"><a class="header-anchor" href="#ts-loader" aria-hidden="true">#</a> ts-loader</h3><p>安装如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install ts-loader typescript -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们在 <code>webpack.common.js</code> 中中配置规则，</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module: {
+  rules: [
+    { 
+      test: /\.(ts)$/,
+      loader: &#39;ts-loader&#39;,
+      exclude: /node_modules/,
+    }
+  ]
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><h3 id="tree-shaking" tabindex="-1"><a class="header-anchor" href="#tree-shaking" aria-hidden="true">#</a> Tree-shaking</h3><blockquote><p>webpack 默认支持，我们只需要在 .bablerc 里面设置 <code>model：false</code>，即可在生产环境下默认开启</p></blockquote><p><strong>Tree-shaking 作用是剔除没有使用的代码，以降低包的体积</strong>，我们使用 <code>Webpack</code> 在生产环境下即 <code>mode 设置为 production</code> 时，打包后会将<code>通过 ES6 语法 import 引入</code>却未使用的代码去除</p><p>而我们这里回忆一点，我们在上文中引入了 <code>babel</code> ，babel 的作用是将 ECMAScript 2015+ 版本的代码转换为向后兼容的 JavaScript 语法，以便能够运行在当前和旧版本的浏览器或其他环境中，同样，它会把 <code>ES6 语法的 import 转换成 require</code>，这会导致 <code>Tree-shaking</code> 失效。</p><p>所以我们在 <code>.babelrc</code> 文件有配置这一点: <code>&quot;modules&quot;: false</code> , 这个就是为了防止babel将任何模块类型都转译成CommonJS类型，导致tree-shaking失效问题</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;presets&quot;: [
+    [
+      &quot;@babel/preset-env&quot;,
+      {
+        // 防止babel将任何模块类型都转译成CommonJS类型，导致tree-shaking失效问题
+        &quot;modules&quot;: false
+      }
+    ],
+  ],
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h3 id="webpack-bundle-analyzer" tabindex="-1"><a class="header-anchor" href="#webpack-bundle-analyzer" aria-hidden="true">#</a> webpack-bundle-analyzer</h3><p><code>webpack-bundle-analyzer</code> 作为一个打包文件分析工具，可以帮助我们分析我们打包之后的大小都分布在什么文件上</p><p>我们先安装它：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install webpack-bundle-analyzer -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们在 <code>webpack.dev.js</code> 中添加 <code>plugins</code> 配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const { BundleAnalyzerPlugin } = require(&#39;webpack-bundle-analyzer&#39;);
+
+module.exports = merge(common, {
+  // ...
+  plugins: [
+    // ...
+    new BundleAnalyzerPlugin({
+      analyzerMode: &#39;server&#39;, // 开一个本地服务查看报告
+      analyzerHost: &#39;127.0.0.1&#39;, // host 设置
+      analyzerPort: 8888, // 端口号设置
+      openAnalyzer: false,//  阻止在默认浏览器中自动打开报告
+    }),
+  ],
+});
+
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>然后我们浏览器打开 http://127.0.0.1:8888 即可看到打包分析，这里设置 <code>openAnalyzer</code> 为 false 是为了防止每次本地build打包时都打开浏览器的分析报告，这样我们只需要有需要的时候自己打开去看即可。</p><h3 id="其它可能会需要的配置" tabindex="-1"><a class="header-anchor" href="#其它可能会需要的配置" aria-hidden="true">#</a> 其它可能会需要的配置</h3><p>本文配置的是 TypeScript SDK 项目，如果你不当当是用来写一个SDK，那你可能还需要 <code>html-loader</code>、<code>css-loader</code>等的其余loader</p><h3 id="terser-webpack-plugin" tabindex="-1"><a class="header-anchor" href="#terser-webpack-plugin" aria-hidden="true">#</a> terser-webpack-plugin</h3><p><code>terser-webpack-plugin</code> 是一个压缩 <code>js</code> 的 <code>webpack</code> 插件。</p><blockquote><p><strong>如果你使用的是 <code>webpack v5</code> 或以上版本，你不需要安装这个插件。</strong><code>webpack v5</code> 在 <code>mode</code> 为 <code>production</code> 时自动帮我们做了代码压缩。</p></blockquote><p>如果我们要用的话，在 <code>webpack.common.js</code> 里面加上如下配置：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const TerserPlugin = require(&#39;terser-webpack-plugin&#39;);
+
+module.exports = {
+  optimization: {
+    minimizer: [
+      new TerserPlugin(
+        parallel: true
+      )
+    ],
+  },
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><h2 id="api文档和注释" tabindex="-1"><a class="header-anchor" href="#api文档和注释" aria-hidden="true">#</a> Api文档和注释</h2><p>因为是 SDK 项目，意味着我们将主动暴露出很多 <code>Class</code> 或者 <code>Function</code> 出去给其它开发者使用的，那么作为typescript项目，我们务必就需要一个文档生成的工具，我们可以选择自动生成 API 的 <code>typedoc</code>，也可以使用我们自定义文档内容的 <code>Vuepress</code>，在这一节里，我们先介绍 <code>typedoc</code> 的使用</p><p>这一节里面，我们讲介绍以下两块配置流程：</p><ul><li>如何使用 <strong>typedoc</strong> 快速生成 <code>API文档</code>。</li><li>如何使用 <strong>koroFileHeader</strong> 快速生成 <code>合理的注释</code>。</li></ul><h3 id="typedoc" tabindex="-1"><a class="header-anchor" href="#typedoc" aria-hidden="true">#</a> typedoc</h3><p><a href="https://typedoc.org/" target="_blank" rel="noopener noreferrer">typedoc<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> 是一个非常好用的 TypeScript 项目API文档生成器，它可以根据你的 <code>源代码</code>以及<code>写在源代码里面的合理注释</code>，自动生成 <code>API文档</code>。</p><p>首先，我们先安装它</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install typedoc -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后，我们在根目录下新建 <code>typedoc.json</code> 文件来放配置信息，配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;entryPoints&quot; : [&quot;src/index.ts&quot;],
+  &quot;out&quot;: &quot;docs&quot;
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><blockquote><p>完整的配置信息，可以在官网查看：https://typedoc.org/guides/options/</p></blockquote><p>这里的 <code>entryPoints</code> 配置项是你项目的入口文件。</p><p>然后我们在 <code>package.json</code> 里加上 <code>scripts</code> 脚本，如下配置：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  &quot;scripts&quot;: {
+    &quot;typedoc&quot;: &quot;rimraf docs &amp;&amp; typedoc&quot;,
+  },
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><blockquote><p>配置到此为止，我们已经可以直接生成我们的 <code>API文档</code> ，让我们来做一个<code>简单测试</code>看看实际生成的效果如何：</p></blockquote><p>首先先往 <code>src/index.ts</code> 里写入代码：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>/**
+ * 这是一个测试Class,调用方法如下：
+ * ```typescript
+ * // We can initialize like this
+ * const sdk = new frontendSdk();
+ * ```
+ */
+export class frontendSdk {
+  /**
+   * @description:        用以初始化
+   * @param {string} id   传参的ID
+   * @param {string} url  建立链接的ID
+   * @return {*}
+   */
+  initConfig(id: string, url: string) {}
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><p>保存后执行上面定义的typedoc脚本</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm run typedoc
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>我们可以看到效果如下，自动为我们生成了一个带有我们写入的注释的API文档，还是比较nice的：</p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/76a30847acde44c9b93cc473adb5d2ca~tplv-k3u1fbpfcp-watermark.image?" alt="4de98a60a3ff47c7960504542d499c5e.png"><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/8eae9ba7c0ec4ea6bcd25160984a4579~tplv-k3u1fbpfcp-watermark.image?" alt="18ae82cb16a04d9bbc6b8423d4840415.png"></p><h3 id="korofileheader" tabindex="-1"><a class="header-anchor" href="#korofileheader" aria-hidden="true">#</a> koroFileHeader</h3><p>根据上文我们说到，<code>typedoc</code> 会根据注释生成文档，但是要我们手动生成这样 <code>合理的注释</code> 又很麻烦，所以这时候就需要借助vscode插件：<code>koroFileHeader</code> 来帮助我们快速生成注释格式</p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e90789e54cba497287aa97a0dcf25998~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>我们在vscode应用商店里搜索 <code>koroFileHeader</code> 并安装，安装好之后，我们在 <code>vscode</code> 内，按键盘<code>ctrl+shift+p</code>打开下图所示的设置文件 <code>setting.json</code></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/6307e9d911a24fa1948142f3ec5046af~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>打开 <code>setting.json</code> 设置之后，我们在里面加入配置，下图配置目的是<code>关闭头部注释，开启函数注释</code>,其中<code>fileheader.cursorMode</code> 对象里面的注释类型可以自行定义：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  &quot;fileheader.customMade&quot;: { 
+    // 头部注释
+    &quot;autoAdd&quot;:false
+  },
+  &quot;fileheader.cursorMode&quot;: {
+    // 函数注释
+    &quot;description&quot;: &quot;&quot;,
+    &quot;param&quot;: &quot;&quot;,
+    &quot;return&quot;: &quot;&quot;,
+  }
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>配置完之后，我们在打开键盘快捷方式：</p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/55156e5dd58d4d5597decb124e813758~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>在里面搜索 <code>cursorTip</code> ,修改它绑定的快捷键为我们喜欢的快捷键，我这里设置的是 <code>ctrl+alt+t</code></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e20109ffd5ca4639989d2bb67c9fec73~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>好啦，到此配置就完成了，我们就可以快速的生成<code>函数注释</code>，生成的函数注释也可以快速的被 <code>typedoc</code> 所识别生成<code>API文档</code>，下图为用 <code>koroFileHeader</code> 快速生成的简单注释</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7e35dc4445804ccfa718673db089ad50~tplv-k3u1fbpfcp-watermark.image?" alt="生成注释.gif"></p><h2 id="vuepress-更自由的定制文档" tabindex="-1"><a class="header-anchor" href="#vuepress-更自由的定制文档" aria-hidden="true">#</a> Vuepress 更自由的定制文档</h2><p>有的时候，使用 typedoc 自动生成的文档，不管是界面还是内容都不是很符合我们的需要，我们需要一个<strong>更加自由可定制化的文档</strong>，我们这里选用 <code>Vuepress</code></p><p>这一节里面，我们讲介绍以下一块内容：</p><ul><li>如何使用 <strong>Vuepress</strong> 生成<code>自定义的文档内容</code></li></ul><blockquote><p>PS：如果选用配置 Vuepress 上面的 typedoc 配置就可以跳过</p></blockquote><h3 id="移除-typedoc-相关的配置" tabindex="-1"><a class="header-anchor" href="#移除-typedoc-相关的配置" aria-hidden="true">#</a> 移除 typedoc 相关的配置</h3><p>如果小伙伴按照上面的文章配置了 <code>typedoc</code> 这时就需要先把 <code>typedoc</code> 相关的配置先移除</p><h3 id="安装" tabindex="-1"><a class="header-anchor" href="#安装" aria-hidden="true">#</a> 安装</h3><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install -D vuepress
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><h2 id="代码规范和提交规范" tabindex="-1"><a class="header-anchor" href="#代码规范和提交规范" aria-hidden="true">#</a> 代码规范和提交规范</h2><p>现在的前端项目开发，一般一个项目可能有多人开发，每个人往往使用的代码风格都不统一，长久下去，势必让项目变得难以维护，我们有必要去约束这些问题，而约束这些，通过代码审查、口头约束这些方式沟通成本过高，不够灵活，更关键的是无法把控。我们急需一个工具去帮我们统一这些代码规范；</p><p>同时为了规范，也意味着我们也需要一些工具去帮助我们去统一代码的提交规范；</p><p>最后，代码风格规范和提交规范都统一了，我们就可以开始做 <code>ChangeLog</code> 的更新；</p><p>这一节里面，我们讲介绍以下三块配置流程：</p><ul><li>如何使用 <strong>EditorConfig + Prettier + ESLint</strong> 组合来实现 <code>代码规范化</code>。</li><li>如何使用 <strong>husky + lint-staged + commitlint</strong> 进行 <code>提交规范的代码</code>。</li><li>如何使用 <strong>standard-version</strong> 实现 <code>生成 ChangeLog </code></li></ul><h3 id="prettier" tabindex="-1"><a class="header-anchor" href="#prettier" aria-hidden="true">#</a> Prettier</h3><p><a href="https://prettier.io/" target="_blank" rel="noopener noreferrer">Prettier<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a> 是非常强大的代码格式化工具，它支持着 JavaScript、TypeScript、CSS、SCSS、Less、JSX、Angular、Vue、JSON、Markdown 等各种语言，我们前端基本上能用到的文件格式它都可以搞定，所以我们这里采用它来约束我们的代码风格规范</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install prettier -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>安装完之后在根目录新建 <code>prettier.config.js</code> 并配置，这里贴出我的简单配置，完整的配置可以查看文档：<a href="https://prettier.io/docs/en/configuration.html" target="_blank" rel="noopener noreferrer">Configuration File · Prettier<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>// https://prettier.io/docs/en/configuration.html
+module.exports = {
+  // 每一行的宽度(显示的字符数)
+  printWidth: 120,
+
+  // tab健的空格数
+  tabWidth: 2,
+
+  // 是否在对象中的括号之间打印空格，{a:5}格式化为{ a: 5 }
+  bracketSpacing: true,
+
+  // 箭头函数的参数无论有几个，都要括号包裹
+  arrowParens: &quot;always&quot;,
+
+  // 换行符的使用
+  endOfLine: &quot;lf&quot;,
+
+  // 是否用单引号， 项目中全部使用单引号
+  singleQuote: true,
+
+  // 对象或者数组的最后一个元素后面是否要加逗号
+  trailingComma: &quot;all&quot;,
+
+  // 是否加分号，项目中统一加分号
+  semi: true,
+
+  // 是否使用tab格式化： 不使用
+  useTabs: false,
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br><span class="line-number">26</span><br><span class="line-number">27</span><br><span class="line-number">28</span><br><span class="line-number">29</span><br></div></div><p>我们再新建一个 <code>.prettierignore</code> 文件用来告诉 Prettier 哪些文件<strong>需要忽略</strong></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># npm包
+/node_modules
+package-lock.json
+
+# build产物
+/dist
+/types
+
+# eslint
+.eslintcache
+
+# jest
+/coverage
+
+# docs api文档
+/docs
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="eslint" tabindex="-1"><a class="header-anchor" href="#eslint" aria-hidden="true">#</a> ESLint</h3><p>我们先安装如下几个插件</p><ul><li>eslint</li><li>@typescript-eslint/parser</li><li>@typescript-eslint/eslint-plugin</li><li><a href="https://github.com/import-js/eslint-plugin-import" target="_blank" rel="noopener noreferrer">eslint-plugin-import<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></li></ul><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install eslint @typescript-eslint/parser @typescript-eslint/eslint-plugin eslint-plugin-import -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>安装成功后执行</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx eslint --init
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p><strong>已经执行 npx eslint --init 的小伙伴现在会依次遇到下面几个问题：</strong></p><ul><li>How would you like to use ESLint?</li></ul><blockquote><p>果断<strong>选择第三条 To check syntax, find problems, and enforce code style</strong> ，检查语法、检测问题并强制代码风格。</p></blockquote><ul><li>What type of modules does your project use?</li></ul><blockquote><p>项目非配置代码都是采用的 ES6 模块系统导入导出，<strong>选择 JavaScript modules</strong></p></blockquote><ul><li>Which framework does your project use?</li></ul><blockquote><p>根据实际需要选择，本文这里<strong>选择都不要</strong></p></blockquote><ul><li>Does your project use TypeScript?</li></ul><blockquote><p>因为是TypeScript项目，这里当然<strong>选是</strong>啦</p></blockquote><ul><li>Where does your code run?</li></ul><blockquote><p><strong>Browser 和 Node 环境都选上</strong></p></blockquote><ul><li>How would you like to define a style for your project?</li></ul><blockquote><p>选择 <strong>Use a popular style guide</strong> ，即使用社区已经制定好的代码风格，我们去遵守就行。</p></blockquote><ul><li>Which style guide do you want to follow?</li></ul><blockquote><p><strong>选择 Airbnb 风格</strong>，都是社区总结出来的最佳实践。</p></blockquote><ul><li>What format do you want your config file to be in?</li></ul><blockquote><p><strong>选择 JavaScript</strong> ，即生成的配置文件是 js 文件，配置更加灵活。</p></blockquote><ul><li>Would you like to install them now with npm?</li></ul><blockquote><p>选择YES</p></blockquote><p>然后我们再在 <code>package.json</code> 中加上 <code>scripts</code> 脚本，然后再在 <code>build</code> 指令之前加上 <code>npm run lint</code></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+    &quot;lint&quot;: &quot;eslint src&quot;,
+    &quot;build&quot;: &quot;npm run lint &amp;&amp; rimraf dist types &amp;&amp; cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js&quot;,
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>我们之前选择风格的时候，选择了 <code>Airbnb</code> 风格，所以很多 rules 规则就不需要我们再自己去定制，直接在 <code>extends</code> 里引入即可，<code>Airbnb github地址</code>：https://github.com/airbnb/javascript ，<strong>有兴趣的小伙伴可以去看一下里面具体制定的规则</strong></p><p>安装结束后，项目根目录下多出了新的文件 <code>.eslintrc.js</code>，修改如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  env: {
+    browser: true,
+    es2021: true,
+    node: true,
+  },
+  extends: [
+    &#39;airbnb-base&#39;,
+    &#39;plugin:@typescript-eslint/recommended&#39;,
+  ],
+  parser: &#39;@typescript-eslint/parser&#39;,
+  parserOptions: {
+    // ecmaVersion用来指定你想要使用的 ECMAScript 版本
+    ecmaVersion: 12,
+    sourceType: &#39;module&#39;,
+  },
+  plugins: [&#39;@typescript-eslint&#39;, &#39;import&#39;],
+  rules: {
+    &#39;import/no-unresolved&#39;: &#39;off&#39;,
+    &#39;import/extensions&#39;: &#39;off&#39;,
+  },
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br></div></div><p>我们再新建一个 <code>.eslintignore</code> 文件用来告诉 ESLint 哪些文件<strong>需要忽略</strong></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># npm包
+/node_modules
+package-lock.json
+
+# build产物
+/dist
+/types
+
+# eslint
+.eslintcache
+
+# jest
+/coverage
+
+# docs api文档
+/docs
+
+# webpack 配置
+/scripts
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br></div></div><blockquote><p><strong>这时我们已经同时安装了Prettier和ESLint，它们俩之间会有一些重复冲突的配置，我们还需要一些插件，以便能够和ESLint一起使用</strong></p></blockquote><p>冲突的本质在于 <code>eslint</code> 既负责了代码质量检测，又负责了一部分的格式美化工作,格式化部分的部分规则和 <code>prettier</code> 不兼容。 能不能让 <code>eslint</code> 只负责代码质量检测而让 <code>prettier</code> 负责美化呢? 社区有了非常好的成熟方案，即 <code>eslint-config-prettier</code> 加上 <code>eslint-plugin-prettier</code></p><p>我们来安装这两个：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm i eslint-plugin-prettier eslint-config-prettier -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><ul><li><code>eslint-config-prettier</code> 的作用是关闭 <code>eslint</code> 中与 <code>prettier</code> 相互冲突的规则。</li><li><code>eslint-plugin-prettier</code> 的作用是调用 <code>ESLint</code> 的时候调用 <code>Prettier</code> 的规范进行代码风格校验</li></ul><p>在 <code>.eslintrc.js</code> 添加 prettier 插件：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  ...
+  extends: [
+    &#39;plugin:prettier/recommended&#39; // 添加 prettier 插件
+  ],
+  ...
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这样配置之后，我们的ESLint和Prettier就可以同时使用啦！且让 <code>eslint</code> 只负责代码质量检测而让 <code>prettier</code> 负责美化。</p><h3 id="vscode插件-editorconfig" tabindex="-1"><a class="header-anchor" href="#vscode插件-editorconfig" aria-hidden="true">#</a> vscode插件 EditorConfig</h3><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/ab53b85290b54e04b1567920b58a8098~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p><p>安装之后，在项目左侧列表，直接右键，底下会有 <code>Generate .editorconfig</code> ，点击即可快速生成 <code>.editorconfig</code> 文件，</p><p>我们修改它生成的 <code>.editorconfig</code> 文件：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code># EditorConfig is awesome: https://EditorConfig.org
+
+# top-most EditorConfig file
+root = true
+
+[*]                   # 表示所有文件都要遵循
+indent_style = space              # 缩进风格，可选配置有space和tab
+indent_size = 2                   # 缩进大小
+end_of_line = lf                  # 换行符，可选配置有lf、cr和crlf
+charset = utf-8                   # 编码格式，通常都是选utf-8
+trim_trailing_whitespace = true   # 去除多余的空格
+insert_final_newline = true       # 在尾部插入一行
+
+[*.md]                # 表示仅 md 文件适用
+insert_final_newline = false      # 在尾部插入一行
+trim_trailing_whitespace = false  # 去除多余的空格
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br></div></div><h3 id="vscode插件-prettier-code-formatter" tabindex="-1"><a class="header-anchor" href="#vscode插件-prettier-code-formatter" aria-hidden="true">#</a> vscode插件 Prettier-Code formatter</h3><p>首先安装扩展</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9231b94e32ec4a9b993f601881f6dbd8~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p><p>配置这个的目的就是为了让开发者的 <code>vscode</code> 配置保持统一，该文件的配置优先于 vscode 全局的settings.json，这样别人下载了你的项目进行开发，也不会因为全局 settings.json的配置不同而导致 <code>Prettier</code> 或之 <code>Eslint</code> 失效</p><p>我们在项目根目录下新建.vscode文件夹，在此文件下再建一个settings.json文件</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>.vscode/
+    setting.json
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>setting.json配置如下</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  // 指定哪些文件不参与搜索
+  &quot;search.exclude&quot;: {
+    &quot;**/node_modules&quot;: true,
+    &quot;dist&quot;: true
+  },
+  &quot;editor.formatOnSave&quot;: true,
+  &quot;[javascript]&quot;: {
+    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+  },
+  &quot;[typescript]&quot;: {
+    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+  },
+  &quot;[json]&quot;: {
+    &quot;editor.defaultFormatter&quot;: &quot;esbenp.prettier-vscode&quot;
+  }
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br></div></div><p>这里配置的效果是：是在我们保存时，会自动执行一次 <code>Prettier</code> 代码格式化</p><h3 id="vscode插件-eslint" tabindex="-1"><a class="header-anchor" href="#vscode插件-eslint" aria-hidden="true">#</a> vscode插件 ESLint</h3><p>我们知道 eslint 由编辑器支持是有自动修复功能的，首先我们需要安装扩展：</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/9f8450c01b7b42ac94bc960d4dd90afc~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p><p>再到之前创建的 <code>.vscode/settings.json</code> 中添加上以下代码：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;eslint.validate&quot;: [
+    &quot;javascript&quot;,
+    &quot;typescript&quot;
+  ],
+  &quot;editor.codeActionsOnSave&quot;: {
+    &quot;source.fixAll.eslint&quot;: true
+  },
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>这时候我们保存时，就会开启 eslint 的自动修复，帮我们修复一些语法上的写法问题。</p><h3 id="husky-lint-staged-提交规范的代码" tabindex="-1"><a class="header-anchor" href="#husky-lint-staged-提交规范的代码" aria-hidden="true">#</a> husky + lint-staged 提交规范的代码</h3><blockquote><p><strong>首先</strong>，使用husky和lint-staged之前，我们先检查一下自己的<strong>node版本是否&gt;=12.20.0</strong>，如果小于，请重装node或者用nvm进行版本切换，见官方要求：https://github.com/okonet/lint-staged#migration 我这边所使用的node版本为<strong>v14.18.2</strong>，</p></blockquote><p>在项目开发过程中，每次提交前我们都要对代码进行格式化以及 eslint 和 stylelint 的规则校验，以此来强制规范我们的代码风格，以及防止隐性 BUG 的产生。</p><p>那么有什么办法只对我们 git 缓存区最新改动过的文件进行以上的格式化和 lint 规则校验呢？</p><p>答案就是<code>husky</code> ，它会提供一些钩子，比如执行 git commit 之前的钩子 <code>pre-commit</code> ，借助这个钩子我们就能执行 lint-staged 所提供的代码文件格式化及 lint 规则校验！</p><p>我们直接执行官方推荐的安装指令：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx mrm@2 lint-staged
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p><strong>注意：安装<code>husky</code>和<code>lint-staged</code>之前，请先安装 <code>ESLint</code> + <code>Prettier</code> ，否则会检测到没有安装后给你报错：</strong></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>E:\Code\hrfsh&gt; npx mrm@2 lint-staged
+npx: 237 安装成功，用时 17.33 秒
+Running lint-staged...
+
+Cannot add lint-staged: only eslint, stylelint, prettier or custom rules are supported.
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><blockquote><p>官方推荐的安装指令执行时会帮你做这几件事：</p></blockquote><ul><li>往 <code>package.json</code> 的devDependencies里加上 <code>husky</code> 和 <code>lint-staged</code> 两个依赖</li><li>往 <code>package.json</code> 里的scripts里加上 <code>&quot;prepare&quot;: &quot;husky install&quot;</code> 脚本</li><li>往 <code>package.json</code> 里增加 lint-staged 配置项，官方生成的代码如下：</li></ul><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  &quot;lint-staged&quot;: {
+    &quot;*.js&quot;: &quot;eslint --cache --fix&quot;,
+    &quot;*.{js,css,md}&quot;: &quot;prettier --write&quot;
+  }
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><ul><li>在根目录新建<code>.husky</code>文件夹,文件夹里的<code>pre-commit</code>文件已经自动帮我们集成了<code>npx lint-staged</code>指令</li></ul><blockquote><p>这样，到此为止我们已经可以实现：在commit提交时，对暂存区的.js文件都执行<code>eslint --cache --fix</code>进行语法自动修正，对.js.css.md文件都进行<code>prettier --write</code>写法风格纠正，但是官方给配置的里面没有包含.ts的文件，且我们并不想要自动修正 <code>--fix</code></p></blockquote><p><strong>所以我们重新配置</strong>我们的<code>package.json</code>，修改指令自动生成的lint-staged配置项为我们所需要的</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;lint-staged&quot;: {
+    &quot;*.{ts,js}&quot;: [
+      &quot;eslint&quot;
+    ]
+  }
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><p>这段话的意思是：当暂存区内的文件后缀为.js或者.ts时，就会进行eslint校验。</p><p>如此配置完之后，我们每次进行commit时，都会触发eslint校验，去检测暂存区里的文件是否符合ESLint规范，如果不符合规范，就会抛错出来中止commit</p><h3 id="commitlint-提交规范的-commit" tabindex="-1"><a class="header-anchor" href="#commitlint-提交规范的-commit" aria-hidden="true">#</a> commitlint 提交规范的 commit</h3><blockquote><p>在多人参与的项目中，如果 git 的提交说明精准，在后期协作以及 bug 处理时会变得有据可查；</p></blockquote><p>我们的目的只有一个：<strong>只让符合 Angular 规范的 commit message 通过 commit 检查</strong>，为了达成这个目的，我们使用 <code>commitlint</code> 可以帮助我们检查 git commit 时的 message 格式是否符合规范</p><p>我们首先先安装依赖</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install @commitlint/cli @commitlint/config-conventional -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><blockquote><p>这里，我们使用社区最流行、最知名、最受认可的 <code>Angular</code> 团队提交规范。</p></blockquote><p>先看看 <a href="https://link.juejin.cn/?target=https%3A%2F%2Fgithub.com%2Fangular%2Fangular%2Fcommits%2Fmaster" title="https://github.com/angular/angular/commits/master" target="_blank" rel="noopener noreferrer">Angular 项目的提交记录<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a>：</p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fbf9fb9ab947497b97653d104050bf73~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>如上图可以清楚看到，每个 commit 都是有着清楚的完整的格式的，commit message 由 Header、Body、Footer 组成。具体的 commit msg 格式文章有很多我这里就不多唠叨了，我们就直接进入配置流程：</p><p>我们在根目录新建 <code>.commitlintrc.js</code> 文件，这就是我们的 commitlint 配置文件，配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  extends: [&#39;@commitlint/config-conventional&#39;],
+  rules: {
+    &#39;type-enum&#39;: [
+      2,
+      &#39;always&#39;,
+      [&#39;build&#39;, &#39;ci&#39;, &#39;chore&#39;, &#39;docs&#39;, &#39;feat&#39;, &#39;fix&#39;, &#39;perf&#39;, &#39;refactor&#39;, &#39;revert&#39;, &#39;style&#39;, &#39;test&#39;],
+    ],
+  },
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>其中都是官方推荐的 angular 风格的 commitlint 配置</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>/**
+
+ * build : 改变了build工具 如 webpack
+ * ci : 持续集成新增
+ * chore : 构建过程或辅助工具的变动
+ * feat : 新功能
+ * docs : 文档改变
+ * fix : 修复bug
+ * perf : 性能优化
+ * refactor : 某个已有功能重构
+ * revert : 撤销上一次的 commit
+ * style : 代码格式改变
+ * test : 增加测试
+ */
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>然后我们要结合上面的 <code>husky</code> 增加一个钩子，执行下面这条语句：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx husky add .husky/commit-msg &#39;npx --no-install commitlint --edit $1&#39;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p><strong>这样操作完之后，我们在commit的时候，就会触发husky钩子去检查我们的提交信息是否符合规范</strong></p><blockquote><p><strong>注意</strong>：使用windows的小伙伴，在npx husky add时可能会出现无法add的情况，</p></blockquote><p>在github上已经有人提出了这个问题：https://github.com/typicode/husky/issues/1043</p><p>我们只需要像这个 <code>issue</code> 里提供的方案一样，修改我们的add代码为如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx husky add .husky/commit-msg &quot;npx&quot;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们再在生成的 <code>commit-msg</code> 文件中把npm补全成上述代码中的完整语句即可。</p><p>补全后的 <code>commit-msg</code> 文件完整配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>#!/bin/sh
+. &quot;$(dirname &quot;$0&quot;)/_/husky.sh&quot;
+
+npx --no-install commitlint --edit $1
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><h3 id="standard-version-生成-changelog" tabindex="-1"><a class="header-anchor" href="#standard-version-生成-changelog" aria-hidden="true">#</a> standard-version 生成 changelog</h3><p>这里选用的是standard-version，安装如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm i standard-version -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>我们再在package.json中配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>  &quot;scripts&quot;: {
+    &quot;release&quot;: &quot;standard-version&quot;,
+    &quot;release-major&quot;: &quot;standard-version --release-as major&quot;,
+    &quot;release-minor&quot;: &quot;standard-version --release-as minor&quot;,
+    &quot;release-patch&quot;: &quot;standard-version --release-as patch&quot;,
+  },
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br></div></div><p>版本号 <code>major.minor.patch</code></p><p><code>standard-version</code> 默认的版本更新规则:</p><ul><li>feature 会更新 minor,</li></ul><ul><li>bug fix 会更新 patch,</li></ul><ul><li>BREAKING CHANGES 会更新 major</li></ul><p>我们手动添加了 <code>release-major</code> 等的指令，这样子会更方便我们做版本提交</p><p>然后我们在根目录新建 <code>.versionrc.js</code> 文件，配置如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  header: &#39;# Changelog&#39;,
+  commitUrlFormat: &#39;{{host}}/{{owner}}/{{repository}}/commit/{{hash}}&#39;,
+  types: [
+    { type: &#39;feat&#39;, section: &#39;✨ Features | 新功能&#39; },
+    { type: &#39;fix&#39;, section: &#39;🐛 Bug Fixes | Bug 修复&#39; },
+    { type: &#39;init&#39;, section: &#39;🎉 Init | 初始化&#39; },
+    { type: &#39;docs&#39;, section: &#39;✏️ Documentation | 文档&#39; },
+    { type: &#39;style&#39;, section: &#39;💄 Styles | 风格&#39; },
+    { type: &#39;refactor&#39;, section: &#39;♻️ Code Refactoring | 代码重构&#39; },
+    { type: &#39;perf&#39;, section: &#39;⚡ Performance Improvements | 性能优化&#39; },
+    { type: &#39;test&#39;, section: &#39;✅ Tests | 测试&#39; },
+    { type: &#39;revert&#39;, section: &#39;⏪ Revert | 回退&#39; },
+    { type: &#39;build&#39;, section: &#39;📦‍ Build System | 打包构建&#39; },
+    { type: &#39;chore&#39;, section: &#39;🚀 Chore | 构建/工程依赖/工具&#39; },
+    { type: &#39;ci&#39;, section: &#39;👷 Continuous Integration | CI 配置&#39; },
+  ],
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br></div></div><p>想自定义的小伙伴可以自行翻开官方的文档：<a href="https://github.com/conventional-changelog/conventional-changelog-config-spec/blob/master/versions/2.1.0/README.md" target="_blank" rel="noopener noreferrer">conventional-changelog-config-spec/README.md<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><blockquote><p>运行之后，会自动生成changelog并commit，<strong>不过并没有推动到git仓库，所以得我们手动推送，或者在代码里加上推送的指令</strong>，如果我们不想让它自动commit，可以在package.json中设置，除了commit还可设置跳过<code>bump</code>, <code>changelog</code>, <code>tag</code>这几个步骤</p></blockquote><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;standard-version&quot;: {
+    &quot;skip&quot;: {
+      &quot;commit&quot;: true
+    }
+  }
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br></div></div><h3 id="配置外的一些话" tabindex="-1"><a class="header-anchor" href="#配置外的一些话" aria-hidden="true">#</a> 配置外的一些话</h3><p>如同上文所述，我们安装了EditorConfig、Prettier、ESLint来做代码检查，风格检查，那么有的小伙伴可能会疑问：这些的规范校验规则难道不会互相冲突吗？</p><p>答案是会的，首先我们先看一下三者的定位：</p><ul><li>EditorConfig: 跨编辑器和IDE编写代码，保持一致的简单编码风格；</li></ul><ul><li>Prettier: 专注于代码格式化的工具，美化代码；</li></ul><ul><li>ESLint：作代码质量检测、编码风格约束等；</li></ul><p>ESLint和Prettier的冲突在前面的ESLint配置</p><p>EditorConfig的配置项都是一些不涉及具体语法的，比如 缩进大小、文移除多余空格等。</p><p>而 Prettier是一个格式化工具，要根据具体语法格式化，采用单引号还是双引号，是否加分号，在哪里换行等等，当然，肯定也有缩进大小。</p><p>即使缩进大小这些共同都有的设置，两者也是不冲突的，假设我们设置 EditorConfig 的 indent_size 为 4 ， Prettier 的 tabWidth 为 2，我们看一下配置后的效果：</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7569ad0d49c14627bcaf6ecd627948b5~tplv-k3u1fbpfcp-zoom-1.image" alt=""></p><p>可以发现，我们声明完对象回车后，根据 .editorconfig中的配置，缩进大小为 4，所以光标直接跳到了此处，但是保存时，因为我们默认的格式化工具已经在 .vscode/settings.json 中设置为了 Prettier，所以这时候读取缩进大小为 2 的配置，并正确格式化了代码。</p><p>当然，引入它们俩的本意就是保持代码风格一致，如果我们手动配置了所冲突的选项，那就偏离了本意啦~这种重合的地方还是配置一样的好</p><h2 id="本地热更新调试代码" tabindex="-1"><a class="header-anchor" href="#本地热更新调试代码" aria-hidden="true">#</a> 本地热更新调试代码</h2><p>简单来说， SDK 项目由于是提供方法出去供外调用的，所以一般我们本地调试时的流程是这样子的：<code>SDK项目修改代码</code> -&gt; <code>手动让SDK进行打包编译生成产物</code> -&gt; <code>拷贝打包产物到新的一个项目</code> -&gt; <code>在另一个项目内引入打包后的产物</code> -&gt; <code>在另一个项目上调试</code></p><p>这种的调试方式，极为的繁琐且耗费时间，所以我们有必要给项目搞一个<code>本地热更新的调试环境</code>，能够随着我们的代码更新直接查看修改效果。</p><p>这一节里面，我们讲介绍以下两块配置流程：</p><ul><li>如何使用 <strong>html-webpack-plugin + webpack-dev-server</strong> 组合来实现 <code>本地代码调试</code>。</li><li>如何使用 <strong>npm-link</strong> 来实现 <code>运行在目标项目中的调试</code>。</li></ul><h3 id="html-webpack-plugin" tabindex="-1"><a class="header-anchor" href="#html-webpack-plugin" aria-hidden="true">#</a> html-webpack-plugin</h3><p><code>html-webpack-plugin</code> 的作用是帮助我们将打包后的 <code>js</code> 文件自动引进 <code>html</code> 文件中，通过这个插件我们可以省去 <code>拷贝打包产物到新的一个项目</code> <code>在另一个项目引入打包后的产物</code> 这两个繁琐的步骤。</p><p>我们先安装这个插件</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install html-webpack-plugin -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>我们先在 <code>public</code> 文件夹下 新建 <code>index.html</code> 文件，html代码如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>&lt;!DOCTYPE html&gt;
+&lt;html lang=&quot;en&quot;&gt;
+&lt;head&gt;
+  &lt;meta charset=&quot;UTF-8&quot;&gt;
+  &lt;meta http-equiv=&quot;X-UA-Compatible&quot; content=&quot;IE=edge&quot;&gt;
+  &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1.0&quot;&gt;
+  &lt;title&gt;libraryStarter&lt;/title&gt;
+&lt;/head&gt;
+&lt;body&gt;
+&lt;/body&gt;
+&lt;script&gt;
+  new libraryStarter({id:&#39;GIQE-QWQE-VFFF&#39;,url:&#39;localhost&#39;})
+&lt;/script&gt;
+&lt;/html&gt;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br></div></div><p>注意看，这里代码里 <code>new libraryStarter();</code> 这个 <code>libraryStarter</code> ，要和在 <code>webpack.common.js</code> 里配置的 <code>output.library</code> 字段对应，因为 <code>output.library</code> 在全局变量中加了这个变量，我们才可以调用的到</p><p>我们再修改 <code>src/index.ts</code> 为以下代码做一下简单测试：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>interface ConfigOptions {
+  id: string;
+  url: string;
+}
+class libraryStarter {
+  constructor(options: ConfigOptions) {
+    console.log(&#39;constructor-id-url&#39;, options.id, options.url);
+  }
+}
+
+export default libraryStarter;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br></div></div><p>然后我们来配置开发环境下用的 <code>webpack.dev.js</code> 配置文件，我们添加如下配置：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>const HtmlWebpackPlugin = require(&#39;html-webpack-plugin&#39;);
+const { resolve, PROJECT_PATH } = require(&#39;./constants&#39;);
+
+module.exports = merge(common, {
+  plugins: [
+    // ...
+    new HtmlWebpackPlugin({
+      template: resolve(PROJECT_PATH, &#39;./public/index.html&#39;),
+      scriptLoading: &#39;blocking&#39;,
+    })
+  ],
+});
+
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br></div></div><p>到此为止，我们执行 <code>npm run dev</code> 指令 ，跑完之后我们可以看到，在 <code>dist</code> 文件夹内已经自动打进了我们配置的html文件</p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/cf7b112100494c9ab38e12883e5fff64~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>我们在浏览器打开这个 <code>html</code> 文件验证一下看它是不是给我们自动引入<code>打包后的js文件</code>，<code>并正确执行</code>。</p><p><img src="https://p9-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/c0056da9fdae42e7b79b2e60db447d7c~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/667ac9d8dcb44ce8bdeb2c3ffc70b2e6~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>可以看到如上图所示， <code>html-webpack-plugin</code> 已经帮我们自动将打包后的 js 文件自动引进 html 文件中，<code>并且new</code> 也正确执行了</p><blockquote><p>虽然说这样配置后，我们已经可以在本地搭建html进行调试了，但是我们每次调试代码都得 <code>build</code> 后手动刷新页面，懒才是程序员的第一生产力！这种费力的调试方法怎么行呢？解决办法当然有，那就是通过 <code>webpack-dev-server</code> 进行热更新。</p></blockquote><h3 id="webpack-dev-server" tabindex="-1"><a class="header-anchor" href="#webpack-dev-server" aria-hidden="true">#</a> webpack-dev-server</h3><p><code>webpack-dev-server</code> 的作用是可以在本地起一个 http 服务，我们可以指定它的热更新、端口等配置。通过它，我们可以免去我们本地调试SDK中的 <code>手动让SDK进行打包编译生成产物</code> 这一步骤，<strong>并且当它监听到代码变化后，会自己重新build并刷新html页面</strong>，可以说是非常cool了。</p><p>我们先安装一下它：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install webpack-dev-server -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们再在 webpack.dev.js 里加上如下配置：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = merge(common, {
+  devServer: {
+    host: &#39;127.0.0.1&#39;, // 指定 host，不设置的话默认是 localhost
+    port: 9003, // 指定端口，默认是8080
+    compress: true, // 是否启用 压缩
+    open: true, // 打开默认浏览器
+    hot: true, // 热更新
+  },
+});
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br></div></div><p>然后我们再回到 <code>package.json</code> 中修改 <code>dev</code> 脚本，修改后如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;dev&quot;: &quot;rimraf dist types &amp;&amp; cross-env NODE_ENV=development webpack-dev-server --config ./scripts/webpack.dev.js&quot;
+  }
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>然后我们执行 <code>npm run dev</code> 看下配置后的效果</p><p>可以发现，它build完之后自动帮我们打开了上文配置 <code>html-webpack-plugin</code> 时我们手动打开的 <code>index.html</code> 页面，且地址为 http://127.0.0.1:9003/ ，我们看一下控制台的打印：</p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/a4fbde5d8a7745b5ab7cfbb44215362f~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>嗯！打印也没有什么问题，我们再试试 <code>热更新</code> 的效果，我们修改之前的 <code>index.ts</code> 文件，新加一条 <code>console</code>,打印任意东西都行，这里就不贴代码了，我们直接看下效果：</p><p><img src="https://p1-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/fa6f9aab0d5348fb8e94e35a8d27a770~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p>嗯非常nice，可以发现它自动帮我们<code>更新了打包后代码</code>，并且还帮我们<code>刷新了页面</code>，<strong>可以说是非常贴心了~</strong></p><h3 id="npm-link" tabindex="-1"><a class="header-anchor" href="#npm-link" aria-hidden="true">#</a> npm link</h3><p>有了上述的两个插件，我们已经可以实现 <code>无需手动打包和刷新</code> 的 <code>本地热更新代码调试</code> ；开着个两个大屏幕，左手撸码，右手一杯咖啡，就这么轻松调试代码岂不快哉。但是！还有一个场景调试起来还是非常的繁琐，什么呢？那就是：<strong>实际的项目使用我们的 SDK 出现了 BUG</strong>。</p><p>我们先想一下，实际的项目使用我们的 SDK 一般，都由我们发布到 npm 后由项目去安装使用，如果想要在项目上进行调试的话，我们就得手动拷贝 <code>build产物</code> 过去到项目中，然后手动引入使用。并且每次改代码也得重新build重新拷贝！这是不能忍受的，所以这里就介绍一个实用的小技巧，<strong>让我们能够在实际的项目上进行本地调试</strong>。</p><p><strong>这个技巧就是使用 <code>npm link</code></strong></p><p>使用方法极其简单，我们先在我们的 SDK 项目中，命令行执行</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm link
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>执行命令后，npm-link-module会根据package.json上的配置，被链接到全局</p><p>然后我们再到我们要运行 SDK 的实际项目，命令行运行</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm link library-starter
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>然后我们在要运行 SDK 的实际i项目，代码中写上：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>import library-starter from &#39;library-starter&#39;
+new library-starter()
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br></div></div><p>这样子下来，我们就可以在具体的项目中进行快乐的调试了~</p><h2 id="单元测试" tabindex="-1"><a class="header-anchor" href="#单元测试" aria-hidden="true">#</a> 单元测试</h2><p>单元测试是项目开发中一个非常重要的环节，它可以减少 Bug 的出现。而上文的代码规范和提交规范只能约束提交 <code>规范的代码</code> ，但是却不能保证我们提交的是 <code>正确的代码</code> ，所以我们有必要为自己做一个基本的单元测试，来保证每次的代码提交都不会影响我们的功能主流程。</p><p>这一节里面，我们讲介绍以下两块配置流程：</p><ul><li>如何使用 <strong>Jest</strong> 来实现 <code>单元测试</code>。</li><li>如何使用 <strong>husky + lint-staged + Jest</strong> 进行 <code>提交正确的代码</code>。</li></ul><h3 id="jest" tabindex="-1"><a class="header-anchor" href="#jest" aria-hidden="true">#</a> Jest</h3><p>我们先安装：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install jest ts-jest @types/jest -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>其中这几个插件，jest 我们不必多说，而 <code>ts-jest</code> 是 Jes 转换器，可让用 Jest 测试用 TypeScript 编写的项目。而 <code>@types/jest</code> 则是<strong>为了让我们的编译器不会一直报一些jest类型未找到的问题</strong></p><p>Jest默认是不会编译<code>.ts</code>文件的，所以为了我们的 TypeScript 项目能够正常进行单元测试，我们需要进行配置，让 Jest 明白使用<code>ts-jest</code>预设，我们执行指令：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx ts-jest config:init
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>执行完上述 <code>npx ts-jest config:init</code> 指令后，它会帮我们在根目录下创建 <code>jest.config.js</code> 配置文件，我们修改 <code>jest.config.js</code> 为如下：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>module.exports = {
+  preset: &#39;ts-jest&#39;,
+  testEnvironment: &#39;node&#39;,
+  // 是否显示覆盖率报告
+  collectCoverage: true,
+  // 让jest明白哪些文件需要通过测试，这里的要求是：src文件夹下的所有.ts文件都需要覆盖到
+  collectCoverageFrom: [&#39;src/*.ts&#39;],
+  // 这里的意思是：语句覆盖率、分支覆盖率、函数覆盖率、行覆盖率这四项，都得为100%才能通过测试。
+  coverageThreshold: {
+    global: {
+      branches: 100,
+      functions: 100,
+      lines: 100,
+      statements: 100,
+    },
+  },
+  // 路径映射配置，官文档网地址：https://kulshekhar.github.io/ts-jest/docs/getting-started/paths-mapping
+  // 这里的配置要和 TypeScript 路径映射相对应
+  moduleNameMapper: {
+    &#39;^@/(.*)<!--vuepress-ssr-app-->#39;: &#39;&lt;rootDir&gt;/src/$1&#39;,
+    &#39;^@docs/(.*)<!--vuepress-ssr-app-->#39;: &#39;&lt;rootDir&gt;/docs/$1&#39;,
+    &#39;^@public/(.*)<!--vuepress-ssr-app-->#39;: &#39;&lt;rootDir&gt;/public/$1&#39;,
+    &#39;^@test/(.*)<!--vuepress-ssr-app-->#39;: &#39;&lt;rootDir&gt;/test/$1&#39;,
+  },
+};
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br><span class="line-number">24</span><br><span class="line-number">25</span><br></div></div><p>然后我们再配置我们的 <code>package.json</code> 加入 <code>scripts</code> 脚本：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>&quot;test&quot;: &quot;jest&quot;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><blockquote><p>好的，到此为止我们已经可以开始编写单元测试了，让我们先来简单的测试一下效果：</p></blockquote><p>我们修改 <code>src/index.ts</code> 文件：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>interface ConfigOptions {
+  id: string;
+  url: string;
+}
+class LibraryStarter {
+  public id: string;
+
+  public url: string;
+
+  constructor(options: ConfigOptions) {
+    this.id = options.id;
+    this.url = options.url;
+  }
+
+  getConfig() {
+    return {
+      id: this.id,
+      url: this.url,
+    };
+  }
+}
+
+export default LibraryStarter;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br><span class="line-number">16</span><br><span class="line-number">17</span><br><span class="line-number">18</span><br><span class="line-number">19</span><br><span class="line-number">20</span><br><span class="line-number">21</span><br><span class="line-number">22</span><br><span class="line-number">23</span><br></div></div><p>我们在根目录下新建 <code>test</code> 文件夹来存放我们的用例，再在 <code>test</code> 文件夹下新建 <code>init.spec.ts</code> 文件：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>import LibraryStarter from &#39;@/index&#39;;
+
+describe(&#39;src/index.ts&#39;, () =&gt; {
+  it(&#39;这里要判断 SDK 的参数初始化是否正确&#39;, () =&gt; {
+    expect(new LibraryStarter({ id: &#39;GIQE-QWQE-VFFF&#39;, url: &#39;localhost&#39; }).getConfig()).toStrictEqual({
+      id: &#39;GIQE-QWQE-VFFF&#39;,
+      url: &#39;localhost&#39;,
+    });
+  });
+});
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br></div></div><p>好啦，我们来跑一下我们的 单元测试用例 试试看：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm run test
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>按理来说，这段单元测试是要正常通过的，我们来看一下结果：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code> PASS  test/init.spec.ts
+  src/index.ts
+    √ 这里要判断 SDK 的参数初始化是否正确 (2 ms)
+
+----------|---------|----------|---------|---------|-------------------
+File      | % Stmts | % Branch | % Funcs | % Lines | Uncovered Line #s
+----------|---------|----------|---------|---------|-------------------
+All files |     100 |      100 |     100 |     100 | 
+ index.ts |     100 |      100 |     100 |     100 | 
+----------|---------|----------|---------|---------|-------------------
+Test Suites: 1 passed, 1 total
+Tests:       1 passed, 1 total
+Snapshots:   0 total
+Time:        4.927 s
+Ran all test suites.
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br><span class="line-number">6</span><br><span class="line-number">7</span><br><span class="line-number">8</span><br><span class="line-number">9</span><br><span class="line-number">10</span><br><span class="line-number">11</span><br><span class="line-number">12</span><br><span class="line-number">13</span><br><span class="line-number">14</span><br><span class="line-number">15</span><br></div></div><p>先解释一下这几个参数的含义</p><ul><li>% <code>stmts</code> <strong>语句覆盖率</strong> 代码语句的覆盖率</li><li>% <code>Branch</code> <strong>分支覆盖率</strong> 代码中的if执行覆盖率</li><li>% <code>Funcs</code> <strong>函数覆盖率</strong> 代码中的函数覆盖率</li><li>% <code>Lines</code> <strong>行覆盖率</strong> 代码的行覆盖率</li></ul><p>如上述结果所示，我们的测试通过，我们再打开生成的测试覆盖率报告看一下：</p><p>文件在 <code>coverage</code> 文件夹下，为 <code>index.html</code></p><p><img src="https://p6-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/e8e78217085245cba05b1b85583bceb9~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><p><img src="https://p3-juejin.byteimg.com/tos-cn-i-k3u1fbpfcp/7bdfddb435df46939b9c5801baf83ae3~tplv-k3u1fbpfcp-watermark.image?" alt="image.png"></p><h3 id="jest-通过-eslint-校验" tabindex="-1"><a class="header-anchor" href="#jest-通过-eslint-校验" aria-hidden="true">#</a> Jest 通过 ESLint 校验</h3><blockquote><p>为了让我们编写的单元测试代码能够进行符合 Jest 推荐规则的 ESLint 校验，我们需要安装支持的插件来进行检验</p></blockquote><p>我们先安装插件：<a href="https://github.com/jest-community/eslint-plugin-jest" target="_blank" rel="noopener noreferrer">eslint-plugin-jest<span><svg class="external-link-icon" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewbox="0 0 100 100" width="15" height="15"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path><polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg><!--[--><span class="sr-only">open in new window</span><!--]--></span></a></p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npm install eslint-plugin-jest -D
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>安装完之后往 <code>.eslintrc.js</code> 中添加 <code>extends</code> 配置</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;extends&quot;: [&quot;plugin:jest/recommended&quot;]
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br></div></div><p>当然我们也得在 <code>package.json</code> 中加上对 <code>test</code> 文件夹的校验</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>&quot;lint&quot;: &quot;eslint src test&quot;,
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><h3 id="通过-jest-来提交正确的代码" tabindex="-1"><a class="header-anchor" href="#通过-jest-来提交正确的代码" aria-hidden="true">#</a> 通过 Jest 来提交正确的代码</h3><p>上面介绍了 <code>Jest</code> 的单元测试，当然我们还得强制约束一下，只要是未通过 <code>Jest</code> 单元测试的代码，都不允许上传至我们的代码仓库。</p><p>这个需求当然还是得通过我们的老朋友 <code>husky</code> 来进行实现啦</p><p>配置 <code>提交正确的代码</code> 前，我们先在 <code>构建前</code> 加上 <code>Jest</code> 的校验：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>{
+  &quot;scripts&quot;: {
+    &quot;build&quot;: &quot;npm run lint &amp;&amp; npm run test &amp;&amp; rimraf dist &amp;&amp; cross-env NODE_ENV=production webpack --config ./scripts/webpack.prod.js&quot;
+  }
+}
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br><span class="line-number">5</span><br></div></div><p>这样保证了代码构建是正确的代码后，我们去配置 <code>.husky</code> 文件夹下的 <code>pre-push</code> 文件，我们执行：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>npx husky add .husky/pre-push &quot;npm run test&quot;
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br></div></div><p>这里在widnows下执行不成功时，参照上文的 <code>commitlint</code> 那节进行操作https://juejin.cn/post/7038967786051207175/#heading-30</p><p>执行后完整的文件如下所示：</p><div class="language-text ext-text line-numbers-mode"><pre class="language-text"><code>#!/bin/sh
+. &quot;$(dirname &quot;$0&quot;)/_/husky.sh&quot;
+
+npm run test
+</code></pre><div class="line-numbers"><span class="line-number">1</span><br><span class="line-number">2</span><br><span class="line-number">3</span><br><span class="line-number">4</span><br></div></div><p>这样子配置完后，每次 push 时都会去跑一遍 <code>npm run test</code> ，只要覆盖率没有达到100%或者当中的测试用例有一个不通过，这次推送都不允许通过</p><h2 id="自动部署发布" tabindex="-1"><a class="header-anchor" href="#自动部署发布" aria-hidden="true">#</a> 自动部署发布</h2><p>我们开发完 SDK 之后，一般都需要发布在 NPM 上提供下载使用，而如果我们不断的手动去发布NPM，还是比较麻烦的，所以本节内容主要包括以下两块：</p><ul><li>自动更新 <code>静态资源</code>（Docs文档）到 <code>Github</code> 上</li><li>自动 <code>Build构建</code> 并将产物发布到 <code>NPM</code> 上</li></ul><p>本节内容在我的另一篇文章中已经描述，这里是链接：</p><p>https://juejin.cn/post/7045192507969241125/</p><h2 id="结尾" tabindex="-1"><a class="header-anchor" href="#结尾" aria-hidden="true">#</a> 结尾</h2><p>好啦，到此为止，一个基本的 TypeScript SDK 工程已经搭建起来了，之后只需要根据自己的业务，在入口的<code>index.ts</code> 文件开始撸码就好了！</p><p>当然如果小伙伴们是想搞一个 TypeScript 的非SDK项目，也可以像上面这样进行工程配置，之后再加入自己的需要配置即可~</p><!--]--></div><footer class="page-meta"><!----><div class="meta-item last-updated"><span class="meta-item-label">Last Updated: </span><!----></div><div class="meta-item contributors"><span class="meta-item-label">Contributors: </span><span class="meta-item-info"><!--[--><!--[--><span class="contributor" title="email: 815743831@qq.com">菜猫子neko</span><!----><!--]--><!--]--></span></div></footer><!----><!--[--><!--]--></main><!--]--></div><!----><!--]--></div>
+    <script type="module" src="/typescript-sdk-starter/assets/app.b4017085.js" defer></script>
+  </body>
+</html>
