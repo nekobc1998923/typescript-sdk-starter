@@ -1,8 +1,7 @@
-import { defineUserConfig } from 'vuepress'
-import type { DefaultThemeOptions } from 'vuepress'
+import { defineUserConfig, defaultTheme } from 'vuepress'
 const packageJson = require("../../package.json")
 
-export default defineUserConfig<DefaultThemeOptions>({
+export default defineUserConfig({
   // 站点配置
   title: packageJson.name,
   description: packageJson.description,
@@ -10,8 +9,7 @@ export default defineUserConfig<DefaultThemeOptions>({
   base:'/typescript-sdk-starter/',
   
   // 主题和它的配置
-  theme: '@vuepress/theme-default',
-  themeConfig: {
+  theme: defaultTheme({
     navbar:[
       {
         text: "首页",
@@ -30,5 +28,5 @@ export default defineUserConfig<DefaultThemeOptions>({
         link: "https://github.com/nekobc1998923/typescript-sdk-starter",
       },
     ],
-  },
+  })
 })
